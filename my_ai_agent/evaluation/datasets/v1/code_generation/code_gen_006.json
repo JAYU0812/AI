@@ -1,0 +1,32 @@
+{
+  "id": "code_gen_006",
+  "version": "1.0",
+  "category": "code_generation",
+  "difficulty": "medium",
+  "split": "test",
+  "prompt": "Create a palindrome checker function is_palindrome in string_tools.py.",
+  "project_template": "python_basic",
+  "expected_behavior": {},
+  "required_files": [],
+  "required_symbols": [],
+  "forbidden_actions": [],
+  "assertions": [
+    {
+      "type": "FileExistsAssertion",
+      "file": "string_tools.py"
+    },
+    {
+      "type": "SyntaxValidAssertion",
+      "file": "string_tools.py"
+    },
+    {
+      "type": "SymbolExistsAssertion",
+      "file": "string_tools.py",
+      "symbol": "is_palindrome"
+    }
+  ],
+  "timeout_seconds": 60,
+  "tags": [
+    "code_gen"
+  ]
+}

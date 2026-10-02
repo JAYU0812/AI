@@ -1,0 +1,23 @@
+{
+  "id": "tool_sel_004",
+  "version": "1.0",
+  "category": "tool_selection",
+  "difficulty": "easy",
+  "split": "test",
+  "prompt": "Create new module helper.py using CREATE_FILE.",
+  "project_template": "python_basic",
+  "expected_behavior": {},
+  "required_files": [],
+  "required_symbols": [],
+  "forbidden_actions": [],
+  "assertions": [
+    {
+      "type": "StructuredOutputValidAssertion",
+      "schema_type": null
+    }
+  ],
+  "timeout_seconds": 60,
+  "tags": [
+    "tool_selection"
+  ]
+}

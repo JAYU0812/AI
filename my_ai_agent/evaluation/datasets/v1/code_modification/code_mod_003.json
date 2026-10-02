@@ -1,0 +1,32 @@
+{
+  "id": "code_mod_003",
+  "version": "1.0",
+  "category": "code_modification",
+  "difficulty": "medium",
+  "split": "test",
+  "prompt": "Add power function to calculator.py.",
+  "project_template": "python_buggy",
+  "expected_behavior": {},
+  "required_files": [],
+  "required_symbols": [],
+  "forbidden_actions": [],
+  "assertions": [
+    {
+      "type": "FileExistsAssertion",
+      "file": "calculator.py"
+    },
+    {
+      "type": "SyntaxValidAssertion",
+      "file": "calculator.py"
+    },
+    {
+      "type": "SymbolExistsAssertion",
+      "file": "calculator.py",
+      "symbol": "power"
+    }
+  ],
+  "timeout_seconds": 60,
+  "tags": [
+    "patch"
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "id": "proj_und_001",
+  "version": "1.0",
+  "category": "project_understanding",
+  "difficulty": "easy",
+  "split": "test",
+  "prompt": "Locate the AuthService class and its file.",
+  "project_template": "python_auth",
+  "expected_behavior": {},
+  "required_files": [],
+  "required_symbols": [],
+  "forbidden_actions": [],
+  "assertions": [
+    {
+      "type": "FileExistsAssertion",
+      "file": "auth_service.py"
+    },
+    {
+      "type": "SymbolExistsAssertion",
+      "file": "auth_service.py",
+      "symbol": "AuthService"
+    }
+  ],
+  "timeout_seconds": 60,
+  "tags": [
+    "symbol_location"
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "id": "proj_und_007",
+  "version": "1.0",
+  "category": "project_understanding",
+  "difficulty": "hard",
+  "split": "test",
+  "prompt": "Locate run_cli function in python_cli.",
+  "project_template": "python_cli",
+  "expected_behavior": {},
+  "required_files": [],
+  "required_symbols": [],
+  "forbidden_actions": [],
+  "assertions": [
+    {
+      "type": "SymbolExistsAssertion",
+      "file": "cli.py",
+      "symbol": "run_cli"
+    }
+  ],
+  "timeout_seconds": 60,
+  "tags": [
+    "symbol_location"
+  ]
+}

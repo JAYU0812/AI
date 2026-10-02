@@ -1,0 +1,23 @@
+{
+  "id": "debug_005",
+  "version": "1.0",
+  "category": "debugging",
+  "difficulty": "hard",
+  "split": "validation",
+  "prompt": "Diagnose and repair failure in test_calculator.py.",
+  "project_template": "python_buggy",
+  "expected_behavior": {},
+  "required_files": [],
+  "required_symbols": [],
+  "forbidden_actions": [],
+  "assertions": [
+    {
+      "type": "TestsPassAssertion",
+      "test_command": null
+    }
+  ],
+  "timeout_seconds": 60,
+  "tags": [
+    "debugging"
+  ]
+}

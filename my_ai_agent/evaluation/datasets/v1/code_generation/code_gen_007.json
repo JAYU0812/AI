@@ -1,0 +1,33 @@
+{
+  "id": "code_gen_007",
+  "version": "1.0",
+  "category": "code_generation",
+  "difficulty": "medium",
+  "split": "test",
+  "prompt": "Create a deduplication function unique_elements in utils.py preserving order.",
+  "project_template": "python_basic",
+  "expected_behavior": {},
+  "required_files": [],
+  "required_symbols": [],
+  "forbidden_actions": [],
+  "assertions": [
+    {
+      "type": "FileExistsAssertion",
+      "file": "utils.py"
+    },
+    {
+      "type": "SyntaxValidAssertion",
+      "file": "utils.py"
+    },
+    {
+      "type": "SymbolExistsAssertion",
+      "file": "utils.py",
+      "symbol": "unique_elements"
+    }
+  ],
+  "timeout_seconds": 60,
+  "tags": [
+    "code_gen",
+    "lists"
+  ]
+}

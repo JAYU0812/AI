@@ -1,0 +1,23 @@
+{
+  "id": "struct_002",
+  "version": "1.0",
+  "category": "structured_output",
+  "difficulty": "medium",
+  "split": "development",
+  "prompt": "Generate structured decision for running tests in python_basic.",
+  "project_template": "python_basic",
+  "expected_behavior": {},
+  "required_files": [],
+  "required_symbols": [],
+  "forbidden_actions": [],
+  "assertions": [
+    {
+      "type": "StructuredOutputValidAssertion",
+      "schema_type": null
+    }
+  ],
+  "timeout_seconds": 60,
+  "tags": [
+    "schema_validation"
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "id": "gen_und_003",
+  "version": "1.0",
+  "category": "general_understanding",
+  "difficulty": "medium",
+  "split": "test",
+  "prompt": "Identify the entry point and CLI command handler in python_cli.",
+  "project_template": "python_cli",
+  "expected_behavior": {},
+  "required_files": [],
+  "required_symbols": [],
+  "forbidden_actions": [],
+  "assertions": [
+    {
+      "type": "OutputContainsAssertion",
+      "text": "cli"
+    }
+  ],
+  "timeout_seconds": 60,
+  "tags": [
+    "entry_point"
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "id": "code_mod_006",
+  "version": "1.0",
+  "category": "code_modification",
+  "difficulty": "easy",
+  "split": "test",
+  "prompt": "Add modulo function to calculator.py.",
+  "project_template": "python_buggy",
+  "expected_behavior": {},
+  "required_files": [],
+  "required_symbols": [],
+  "forbidden_actions": [],
+  "assertions": [
+    {
+      "type": "FileExistsAssertion",
+      "file": "calculator.py"
+    },
+    {
+      "type": "SyntaxValidAssertion",
+      "file": "calculator.py"
+    },
+    {
+      "type": "SymbolExistsAssertion",
+      "file": "calculator.py",
+      "symbol": "modulo"
+    }
+  ],
+  "timeout_seconds": 60,
+  "tags": [
+    "patch"
+  ]
+}

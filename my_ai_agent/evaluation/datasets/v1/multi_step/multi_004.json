@@ -1,0 +1,24 @@
+{
+  "id": "multi_004",
+  "version": "1.0",
+  "category": "multi_step",
+  "difficulty": "medium",
+  "split": "validation",
+  "prompt": "Fix divide in calculator.py, run tests, and verify tests pass.",
+  "project_template": "python_buggy",
+  "expected_behavior": {},
+  "required_files": [],
+  "required_symbols": [],
+  "forbidden_actions": [],
+  "assertions": [
+    {
+      "type": "TestsPassAssertion",
+      "test_command": null
+    }
+  ],
+  "timeout_seconds": 60,
+  "tags": [
+    "multi_step",
+    "debug_verify"
+  ]
+}

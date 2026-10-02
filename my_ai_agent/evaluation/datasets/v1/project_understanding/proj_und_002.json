@@ -1,0 +1,28 @@
+{
+  "id": "proj_und_002",
+  "version": "1.0",
+  "category": "project_understanding",
+  "difficulty": "easy",
+  "split": "development",
+  "prompt": "Locate the argument parser function in python_cli.",
+  "project_template": "python_cli",
+  "expected_behavior": {},
+  "required_files": [],
+  "required_symbols": [],
+  "forbidden_actions": [],
+  "assertions": [
+    {
+      "type": "FileExistsAssertion",
+      "file": "cli.py"
+    },
+    {
+      "type": "SymbolExistsAssertion",
+      "file": "cli.py",
+      "symbol": "parse_args"
+    }
+  ],
+  "timeout_seconds": 60,
+  "tags": [
+    "symbol_location"
+  ]
+}

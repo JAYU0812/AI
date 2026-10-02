@@ -1,0 +1,28 @@
+{
+  "id": "instr_001",
+  "version": "1.0",
+  "category": "instruction_following",
+  "difficulty": "easy",
+  "split": "test",
+  "prompt": "Create only one file named 'math_helpers.py' containing function 'cube'.",
+  "project_template": "python_basic",
+  "expected_behavior": {},
+  "required_files": [],
+  "required_symbols": [],
+  "forbidden_actions": [],
+  "assertions": [
+    {
+      "type": "FileExistsAssertion",
+      "file": "math_helpers.py"
+    },
+    {
+      "type": "SymbolExistsAssertion",
+      "file": "math_helpers.py",
+      "symbol": "cube"
+    }
+  ],
+  "timeout_seconds": 60,
+  "tags": [
+    "instruction_following"
+  ]
+}

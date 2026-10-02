@@ -1,0 +1,33 @@
+{
+  "id": "code_mod_004",
+  "version": "1.0",
+  "category": "code_modification",
+  "difficulty": "medium",
+  "split": "test",
+  "prompt": "Add version command handler to cli.py returning '1.0.0'.",
+  "project_template": "python_cli",
+  "expected_behavior": {},
+  "required_files": [],
+  "required_symbols": [],
+  "forbidden_actions": [],
+  "assertions": [
+    {
+      "type": "FileExistsAssertion",
+      "file": "cli.py"
+    },
+    {
+      "type": "SyntaxValidAssertion",
+      "file": "cli.py"
+    },
+    {
+      "type": "FileContainsAssertion",
+      "file": "cli.py",
+      "text": "version"
+    }
+  ],
+  "timeout_seconds": 60,
+  "tags": [
+    "patch",
+    "cli"
+  ]
+}

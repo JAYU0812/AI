@@ -1,0 +1,43 @@
+{
+  "id": "code_mod_002",
+  "version": "1.0",
+  "category": "code_modification",
+  "difficulty": "easy",
+  "split": "development",
+  "prompt": "Add a multiply function to utils.py.",
+  "project_template": "python_basic",
+  "expected_behavior": {},
+  "required_files": [],
+  "required_symbols": [],
+  "forbidden_actions": [],
+  "assertions": [
+    {
+      "type": "FileExistsAssertion",
+      "file": "utils.py"
+    },
+    {
+      "type": "SyntaxValidAssertion",
+      "file": "utils.py"
+    },
+    {
+      "type": "SymbolExistsAssertion",
+      "file": "utils.py",
+      "symbol": "multiply"
+    },
+    {
+      "type": "SymbolExistsAssertion",
+      "file": "utils.py",
+      "symbol": "add"
+    },
+    {
+      "type": "SymbolExistsAssertion",
+      "file": "utils.py",
+      "symbol": "subtract"
+    }
+  ],
+  "timeout_seconds": 60,
+  "tags": [
+    "patch",
+    "utils"
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "id": "gen_und_001",
+  "version": "1.0",
+  "category": "general_understanding",
+  "difficulty": "easy",
+  "split": "test",
+  "prompt": "Explain what the python_basic project does.",
+  "project_template": "python_basic",
+  "expected_behavior": {},
+  "required_files": [],
+  "required_symbols": [],
+  "forbidden_actions": [],
+  "assertions": [
+    {
+      "type": "OutputContainsAssertion",
+      "text": "basic"
+    }
+  ],
+  "timeout_seconds": 60,
+  "tags": [
+    "explanation",
+    "project_summary"
+  ]
+}

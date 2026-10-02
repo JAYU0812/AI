@@ -1,0 +1,32 @@
+{
+  "id": "multi_002",
+  "version": "1.0",
+  "category": "multi_step",
+  "difficulty": "hard",
+  "split": "development",
+  "prompt": "Add logout method to AuthService, add test_logout in test_auth.py, and verify tests pass.",
+  "project_template": "python_auth",
+  "expected_behavior": {},
+  "required_files": [],
+  "required_symbols": [],
+  "forbidden_actions": [],
+  "assertions": [
+    {
+      "type": "SymbolExistsAssertion",
+      "file": "auth_service.py",
+      "symbol": "logout"
+    },
+    {
+      "type": "FileExistsAssertion",
+      "file": "test_auth.py"
+    },
+    {
+      "type": "TestsPassAssertion",
+      "test_command": null
+    }
+  ],
+  "timeout_seconds": 60,
+  "tags": [
+    "multi_step"
+  ]
+}

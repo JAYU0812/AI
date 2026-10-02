@@ -1,0 +1,23 @@
+{
+  "id": "gen_und_005",
+  "version": "1.0",
+  "category": "general_understanding",
+  "difficulty": "easy",
+  "split": "test",
+  "prompt": "List the arithmetic operations provided by calculator.py.",
+  "project_template": "python_buggy",
+  "expected_behavior": {},
+  "required_files": [],
+  "required_symbols": [],
+  "forbidden_actions": [],
+  "assertions": [
+    {
+      "type": "OutputContainsAssertion",
+      "text": "add"
+    }
+  ],
+  "timeout_seconds": 60,
+  "tags": [
+    "code_inspection"
+  ]
+}

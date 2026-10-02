@@ -1,0 +1,28 @@
+{
+  "id": "proj_und_003",
+  "version": "1.0",
+  "category": "project_understanding",
+  "difficulty": "medium",
+  "split": "test",
+  "prompt": "Find which arithmetic function has a bug in python_buggy.",
+  "project_template": "python_buggy",
+  "expected_behavior": {},
+  "required_files": [],
+  "required_symbols": [],
+  "forbidden_actions": [],
+  "assertions": [
+    {
+      "type": "FileExistsAssertion",
+      "file": "calculator.py"
+    },
+    {
+      "type": "SymbolExistsAssertion",
+      "file": "calculator.py",
+      "symbol": "divide"
+    }
+  ],
+  "timeout_seconds": 60,
+  "tags": [
+    "bug_location"
+  ]
+}

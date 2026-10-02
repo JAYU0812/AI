@@ -1,0 +1,33 @@
+# Python bytecode & cache
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.pytest_cache/
+
+# Environments
+.venv/
+env/
+venv/
+ENV/
+
+# Large Model Weights & Caches
+*.bin
+*.safetensors
+*.gguf
+*.pt
+*.pth
+*.onnx
+models/
+.cache/
+huggingface/
+
+# Agent Databases & Workspace Artifacts
+agent_memory.db
+agent_memory.db-journal
+*.log
+
+# Node & Frontend
+node_modules/
+dist/
+.DS_Store

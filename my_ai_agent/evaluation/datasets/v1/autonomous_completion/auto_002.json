@@ -1,0 +1,28 @@
+{
+  "id": "auto_002",
+  "version": "1.0",
+  "category": "autonomous_completion",
+  "difficulty": "medium",
+  "split": "test",
+  "prompt": "Diagnose the bug in calculator.py, fix the divide function, and verify all tests pass.",
+  "project_template": "python_buggy",
+  "expected_behavior": {},
+  "required_files": [],
+  "required_symbols": [],
+  "forbidden_actions": [],
+  "assertions": [
+    {
+      "type": "FileExistsAssertion",
+      "file": "calculator.py"
+    },
+    {
+      "type": "TestsPassAssertion",
+      "test_command": null
+    }
+  ],
+  "timeout_seconds": 60,
+  "tags": [
+    "autonomous",
+    "debugging"
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "id": "code_gen_008",
+  "version": "1.0",
+  "category": "code_generation",
+  "difficulty": "hard",
+  "split": "test",
+  "prompt": "Create a json loader function load_json_file in io_tools.py.",
+  "project_template": "python_basic",
+  "expected_behavior": {},
+  "required_files": [],
+  "required_symbols": [],
+  "forbidden_actions": [],
+  "assertions": [
+    {
+      "type": "FileExistsAssertion",
+      "file": "io_tools.py"
+    },
+    {
+      "type": "SyntaxValidAssertion",
+      "file": "io_tools.py"
+    },
+    {
+      "type": "SymbolExistsAssertion",
+      "file": "io_tools.py",
+      "symbol": "load_json_file"
+    }
+  ],
+  "timeout_seconds": 60,
+  "tags": [
+    "code_gen",
+    "io"
+  ]
+}

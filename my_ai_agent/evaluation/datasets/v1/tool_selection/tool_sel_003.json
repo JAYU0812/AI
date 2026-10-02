@@ -1,0 +1,23 @@
+{
+  "id": "tool_sel_003",
+  "version": "1.0",
+  "category": "tool_selection",
+  "difficulty": "medium",
+  "split": "test",
+  "prompt": "Apply surgical patch to calculator.py using PATCH_FILE.",
+  "project_template": "python_buggy",
+  "expected_behavior": {},
+  "required_files": [],
+  "required_symbols": [],
+  "forbidden_actions": [],
+  "assertions": [
+    {
+      "type": "StructuredOutputValidAssertion",
+      "schema_type": null
+    }
+  ],
+  "timeout_seconds": 60,
+  "tags": [
+    "tool_selection"
+  ]
+}

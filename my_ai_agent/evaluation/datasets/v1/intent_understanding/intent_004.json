@@ -1,0 +1,23 @@
+{
+  "id": "intent_004",
+  "version": "1.0",
+  "category": "intent_understanding",
+  "difficulty": "medium",
+  "split": "test",
+  "prompt": "Add a version command to cli.py.",
+  "project_template": "python_cli",
+  "expected_behavior": {},
+  "required_files": [],
+  "required_symbols": [],
+  "forbidden_actions": [],
+  "assertions": [
+    {
+      "type": "StructuredOutputValidAssertion",
+      "schema_type": null
+    }
+  ],
+  "timeout_seconds": 60,
+  "tags": [
+    "intent_cli"
+  ]
+}

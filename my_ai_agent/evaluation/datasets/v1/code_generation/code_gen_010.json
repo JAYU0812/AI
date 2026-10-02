@@ -1,0 +1,32 @@
+{
+  "id": "code_gen_010",
+  "version": "1.0",
+  "category": "code_generation",
+  "difficulty": "medium",
+  "split": "test",
+  "prompt": "Create a clamp function in utils.py bounding value between min and max.",
+  "project_template": "python_basic",
+  "expected_behavior": {},
+  "required_files": [],
+  "required_symbols": [],
+  "forbidden_actions": [],
+  "assertions": [
+    {
+      "type": "FileExistsAssertion",
+      "file": "utils.py"
+    },
+    {
+      "type": "SyntaxValidAssertion",
+      "file": "utils.py"
+    },
+    {
+      "type": "SymbolExistsAssertion",
+      "file": "utils.py",
+      "symbol": "clamp"
+    }
+  ],
+  "timeout_seconds": 60,
+  "tags": [
+    "code_gen"
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "id": "struct_003",
+  "version": "1.0",
+  "category": "structured_output",
+  "difficulty": "medium",
+  "split": "test",
+  "prompt": "Generate structured decision for patching calculator.py.",
+  "project_template": "python_buggy",
+  "expected_behavior": {},
+  "required_files": [],
+  "required_symbols": [],
+  "forbidden_actions": [],
+  "assertions": [
+    {
+      "type": "StructuredOutputValidAssertion",
+      "schema_type": null
+    }
+  ],
+  "timeout_seconds": 60,
+  "tags": [
+    "schema_validation"
+  ]
+}

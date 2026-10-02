@@ -1,0 +1,35 @@
+{
+  "dataset_name": "Antigravity Agent Instruction Tuning Dataset",
+  "dataset_version": "1.0",
+  "schema_version": "1.0",
+  "created_at": "2026-10-01T13:18:46.487898+00:00",
+  "source_benchmark_version": "v1.0",
+  "source_step": "6B",
+  "number_of_source_candidates": 40,
+  "total_generated": 42,
+  "total_accepted": 42,
+  "total_rejected": 0,
+  "acceptance_rate_percentage": 100.0,
+  "average_quality_score": 1.0,
+  "split_sizes": {
+    "train": 32,
+    "validation": 5,
+    "test": 5
+  },
+  "hashes": {
+    "training_dataset_v1.jsonl": "sha256:5593b4a17f34691cdb634576a8d0a52cd1c09a050be3695926ce3036f7ee5b07",
+    "validation_dataset_v1.jsonl": "sha256:19f93efea0330679fd8806749b2eff953feef8dd5396f4f03f5165cdaa196327",
+    "test_dataset_v1.jsonl": "sha256:cbb06d3b13f82ed074229d24491b25a5f2ec12263bdc74c9f87dae4d9707acd9",
+    "rejected_examples_v1.jsonl": "sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "dataset_statistics_v1.json": "sha256:31e3b208b18f46c91276b7ae8da0c732280903f39137e25262779549ac712f7d"
+  },
+  "quality_gates": {
+    "schema_validation": "PASSED",
+    "syntax_ast_validation": "PASSED",
+    "secret_scanning": "PASSED",
+    "pii_scanning": "PASSED",
+    "benchmark_leakage": "PASSED",
+    "cross_split_isolation": "PASSED",
+    "deduplication": "PASSED"
+  }
+}

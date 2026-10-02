@@ -1,0 +1,28 @@
+{
+  "id": "multi_006",
+  "version": "1.0",
+  "category": "multi_step",
+  "difficulty": "hard",
+  "split": "test",
+  "prompt": "Add clear_sessions to AuthService, add test in test_auth.py, and run tests.",
+  "project_template": "python_auth",
+  "expected_behavior": {},
+  "required_files": [],
+  "required_symbols": [],
+  "forbidden_actions": [],
+  "assertions": [
+    {
+      "type": "SymbolExistsAssertion",
+      "file": "auth_service.py",
+      "symbol": "clear_sessions"
+    },
+    {
+      "type": "TestsPassAssertion",
+      "test_command": null
+    }
+  ],
+  "timeout_seconds": 60,
+  "tags": [
+    "multi_step"
+  ]
+}

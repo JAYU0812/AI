@@ -1,0 +1,522 @@
+[
+  {
+    "task_id": "code_gen_001",
+    "category": "code_generation",
+    "difficulty": "easy",
+    "score_percentage": 56.25,
+    "primary_root_cause": "MODEL_CAPABILITY",
+    "recommended_action": "Train model on domain-specific function signature creation and parameter handling.",
+    "evidence": [
+      "SymbolExistsAssertion failed: Symbol 'multiply' not found in 'utils.py'. Present: ['add', 'subtract']",
+      "Executed 5 tool actions, modified 0 files",
+      "Reported failure taxonomy: runtime_error"
+    ]
+  },
+  {
+    "task_id": "code_gen_002",
+    "category": "code_generation",
+    "difficulty": "medium",
+    "score_percentage": 56.25,
+    "primary_root_cause": "MODEL_CAPABILITY",
+    "recommended_action": "Train model on domain-specific function signature creation and parameter handling.",
+    "evidence": [
+      "SymbolExistsAssertion failed: Symbol 'divide' not found in 'utils.py'. Present: ['add', 'subtract']",
+      "Executed 5 tool actions, modified 0 files",
+      "Reported failure taxonomy: runtime_error"
+    ]
+  },
+  {
+    "task_id": "code_gen_003",
+    "category": "code_generation",
+    "difficulty": "medium",
+    "score_percentage": 16.67,
+    "primary_root_cause": "MODEL_CAPABILITY",
+    "recommended_action": "Fine-tune neural model on broad coding instruction dataset for arbitrary module synthesis.",
+    "evidence": [
+      "FileExistsAssertion failed: Expected file 'math_tools.py' does not exist",
+      "SyntaxValidAssertion failed: File 'math_tools.py' does not exist to check syntax",
+      "SymbolExistsAssertion failed: File 'math_tools.py' does not exist"
+    ]
+  },
+  {
+    "task_id": "code_gen_004",
+    "category": "code_generation",
+    "difficulty": "easy",
+    "score_percentage": 56.25,
+    "primary_root_cause": "MODEL_CAPABILITY",
+    "recommended_action": "Train model on domain-specific function signature creation and parameter handling.",
+    "evidence": [
+      "SymbolExistsAssertion failed: Symbol 'power' not found in 'utils.py'. Present: ['add', 'subtract']",
+      "Executed 5 tool actions, modified 0 files",
+      "Reported failure taxonomy: runtime_error"
+    ]
+  },
+  {
+    "task_id": "code_gen_005",
+    "category": "code_generation",
+    "difficulty": "easy",
+    "score_percentage": 16.67,
+    "primary_root_cause": "MODEL_CAPABILITY",
+    "recommended_action": "Fine-tune neural model on broad coding instruction dataset for arbitrary module synthesis.",
+    "evidence": [
+      "FileExistsAssertion failed: Expected file 'string_tools.py' does not exist",
+      "SyntaxValidAssertion failed: File 'string_tools.py' does not exist to check syntax",
+      "SymbolExistsAssertion failed: File 'string_tools.py' does not exist"
+    ]
+  },
+  {
+    "task_id": "code_gen_006",
+    "category": "code_generation",
+    "difficulty": "medium",
+    "score_percentage": 16.67,
+    "primary_root_cause": "MODEL_CAPABILITY",
+    "recommended_action": "Fine-tune neural model on broad coding instruction dataset for arbitrary module synthesis.",
+    "evidence": [
+      "FileExistsAssertion failed: Expected file 'string_tools.py' does not exist",
+      "SyntaxValidAssertion failed: File 'string_tools.py' does not exist to check syntax",
+      "SymbolExistsAssertion failed: File 'string_tools.py' does not exist"
+    ]
+  },
+  {
+    "task_id": "code_gen_007",
+    "category": "code_generation",
+    "difficulty": "medium",
+    "score_percentage": 56.25,
+    "primary_root_cause": "MODEL_CAPABILITY",
+    "recommended_action": "Train model on domain-specific function signature creation and parameter handling.",
+    "evidence": [
+      "SymbolExistsAssertion failed: Symbol 'unique_elements' not found in 'utils.py'. Present: ['add', 'subtract']",
+      "Executed 5 tool actions, modified 0 files",
+      "Reported failure taxonomy: runtime_error"
+    ]
+  },
+  {
+    "task_id": "code_gen_008",
+    "category": "code_generation",
+    "difficulty": "hard",
+    "score_percentage": 16.67,
+    "primary_root_cause": "MODEL_CAPABILITY",
+    "recommended_action": "Fine-tune neural model on broad coding instruction dataset for arbitrary module synthesis.",
+    "evidence": [
+      "FileExistsAssertion failed: Expected file 'io_tools.py' does not exist",
+      "SyntaxValidAssertion failed: File 'io_tools.py' does not exist to check syntax",
+      "SymbolExistsAssertion failed: File 'io_tools.py' does not exist"
+    ]
+  },
+  {
+    "task_id": "code_gen_009",
+    "category": "code_generation",
+    "difficulty": "easy",
+    "score_percentage": 16.67,
+    "primary_root_cause": "MODEL_CAPABILITY",
+    "recommended_action": "Fine-tune neural model on broad coding instruction dataset for arbitrary module synthesis.",
+    "evidence": [
+      "FileExistsAssertion failed: Expected file 'converters.py' does not exist",
+      "SyntaxValidAssertion failed: File 'converters.py' does not exist to check syntax",
+      "SymbolExistsAssertion failed: File 'converters.py' does not exist"
+    ]
+  },
+  {
+    "task_id": "code_gen_010",
+    "category": "code_generation",
+    "difficulty": "medium",
+    "score_percentage": 56.25,
+    "primary_root_cause": "MODEL_CAPABILITY",
+    "recommended_action": "Train model on domain-specific function signature creation and parameter handling.",
+    "evidence": [
+      "SymbolExistsAssertion failed: Symbol 'clamp' not found in 'utils.py'. Present: ['add', 'subtract']",
+      "Executed 5 tool actions, modified 0 files",
+      "Reported failure taxonomy: runtime_error"
+    ]
+  },
+  {
+    "task_id": "code_mod_002",
+    "category": "code_modification",
+    "difficulty": "easy",
+    "score_percentage": 56.25,
+    "primary_root_cause": "MODEL_CAPABILITY",
+    "recommended_action": "Fine-tune model on AST method insertion without duplicating existing symbols.",
+    "evidence": [
+      "SymbolExistsAssertion failed: Symbol 'multiply' not found in 'utils.py'. Present: ['add', 'subtract']",
+      "Executed 5 tool actions, modified 0 files",
+      "Reported failure taxonomy: runtime_error"
+    ]
+  },
+  {
+    "task_id": "code_mod_003",
+    "category": "code_modification",
+    "difficulty": "medium",
+    "score_percentage": 56.25,
+    "primary_root_cause": "MODEL_CAPABILITY",
+    "recommended_action": "Fine-tune model on AST method insertion without duplicating existing symbols.",
+    "evidence": [
+      "SymbolExistsAssertion failed: Symbol 'power' not found in 'calculator.py'. Present: ['add', 'divide', 'subtract']",
+      "Executed 6 tool actions, modified 0 files",
+      "Reported failure taxonomy: runtime_error"
+    ]
+  },
+  {
+    "task_id": "code_mod_005",
+    "category": "code_modification",
+    "difficulty": "hard",
+    "score_percentage": 56.25,
+    "primary_root_cause": "MODEL_CAPABILITY",
+    "recommended_action": "Fine-tune model on AST method insertion without duplicating existing symbols.",
+    "evidence": [
+      "SymbolExistsAssertion failed: Symbol 'get_active_count' not found in 'auth_service.py'. Present: ['AuthService', '__init__', 'is_authenticated', 'login', 'logout']",
+      "Executed 4 tool actions, modified 0 files",
+      "Reported failure taxonomy: runtime_error"
+    ]
+  },
+  {
+    "task_id": "code_mod_006",
+    "category": "code_modification",
+    "difficulty": "easy",
+    "score_percentage": 56.25,
+    "primary_root_cause": "MODEL_CAPABILITY",
+    "recommended_action": "Fine-tune model on AST method insertion without duplicating existing symbols.",
+    "evidence": [
+      "SymbolExistsAssertion failed: Symbol 'modulo' not found in 'calculator.py'. Present: ['add', 'divide', 'subtract']",
+      "Executed 6 tool actions, modified 0 files",
+      "Reported failure taxonomy: runtime_error"
+    ]
+  },
+  {
+    "task_id": "code_mod_007",
+    "category": "code_modification",
+    "difficulty": "medium",
+    "score_percentage": 56.25,
+    "primary_root_cause": "MODEL_CAPABILITY",
+    "recommended_action": "Fine-tune model on AST method insertion without duplicating existing symbols.",
+    "evidence": [
+      "SymbolExistsAssertion failed: Symbol 'clear_sessions' not found in 'auth_service.py'. Present: ['AuthService', '__init__', 'is_authenticated', 'login', 'logout']",
+      "Executed 4 tool actions, modified 0 files",
+      "Reported failure taxonomy: runtime_error"
+    ]
+  },
+  {
+    "task_id": "code_mod_009",
+    "category": "code_modification",
+    "difficulty": "easy",
+    "score_percentage": 56.25,
+    "primary_root_cause": "MODEL_CAPABILITY",
+    "recommended_action": "Fine-tune model on AST method insertion without duplicating existing symbols.",
+    "evidence": [
+      "SymbolExistsAssertion failed: Symbol 'square' not found in 'utils.py'. Present: ['add', 'subtract']",
+      "Executed 5 tool actions, modified 0 files",
+      "Reported failure taxonomy: runtime_error"
+    ]
+  },
+  {
+    "task_id": "code_mod_010",
+    "category": "code_modification",
+    "difficulty": "hard",
+    "score_percentage": 56.25,
+    "primary_root_cause": "MODEL_CAPABILITY",
+    "recommended_action": "Fine-tune model on AST method insertion without duplicating existing symbols.",
+    "evidence": [
+      "SymbolExistsAssertion failed: Symbol 'revoke_all' not found in 'auth_service.py'. Present: ['AuthService', '__init__', 'is_authenticated', 'login', 'logout']",
+      "Executed 4 tool actions, modified 0 files",
+      "Reported failure taxonomy: runtime_error"
+    ]
+  },
+  {
+    "task_id": "instr_001",
+    "category": "instruction_following",
+    "difficulty": "easy",
+    "score_percentage": 16.67,
+    "primary_root_cause": "PROMPT_DESIGN",
+    "recommended_action": "Inject explicit negative constraints and file boundaries into agent prompt builder.",
+    "evidence": [
+      "FileExistsAssertion failed: Expected file 'math_helpers.py' does not exist",
+      "SymbolExistsAssertion failed: File 'math_helpers.py' does not exist",
+      "Executed 5 tool actions, modified 0 files"
+    ]
+  },
+  {
+    "task_id": "instr_002",
+    "category": "instruction_following",
+    "difficulty": "medium",
+    "score_percentage": 56.25,
+    "primary_root_cause": "PROMPT_DESIGN",
+    "recommended_action": "Inject explicit negative constraints and file boundaries into agent prompt builder.",
+    "evidence": [
+      "SymbolExistsAssertion failed: Symbol 'multiply' not found in 'utils.py'. Present: ['add', 'subtract']",
+      "Executed 5 tool actions, modified 0 files",
+      "Reported failure taxonomy: runtime_error"
+    ]
+  },
+  {
+    "task_id": "instr_003",
+    "category": "instruction_following",
+    "difficulty": "medium",
+    "score_percentage": 56.25,
+    "primary_root_cause": "PROMPT_DESIGN",
+    "recommended_action": "Inject explicit negative constraints and file boundaries into agent prompt builder.",
+    "evidence": [
+      "SymbolExistsAssertion failed: Symbol 'divide' not found in 'utils.py'. Present: ['add', 'subtract']",
+      "Executed 5 tool actions, modified 0 files",
+      "Reported failure taxonomy: runtime_error"
+    ]
+  },
+  {
+    "task_id": "instr_004",
+    "category": "instruction_following",
+    "difficulty": "hard",
+    "score_percentage": 56.25,
+    "primary_root_cause": "PROMPT_DESIGN",
+    "recommended_action": "Inject explicit negative constraints and file boundaries into agent prompt builder.",
+    "evidence": [
+      "SymbolExistsAssertion failed: Symbol 'power' not found in 'calculator.py'. Present: ['add', 'divide', 'subtract']",
+      "Executed 6 tool actions, modified 0 files",
+      "Reported failure taxonomy: runtime_error"
+    ]
+  },
+  {
+    "task_id": "instr_005",
+    "category": "instruction_following",
+    "difficulty": "easy",
+    "score_percentage": 16.67,
+    "primary_root_cause": "PROMPT_DESIGN",
+    "recommended_action": "Inject explicit negative constraints and file boundaries into agent prompt builder.",
+    "evidence": [
+      "SymbolExistsAssertion failed: Symbol 'is_valid_token' not found in 'auth_service.py'. Present: ['AuthService', '__init__', 'is_authenticated', 'login', 'logout']",
+      "Executed 4 tool actions, modified 0 files",
+      "Dimension 'understanding' scored 0 (complete failure)"
+    ]
+  },
+  {
+    "task_id": "intent_001",
+    "category": "intent_understanding",
+    "difficulty": "easy",
+    "score_percentage": 16.67,
+    "primary_root_cause": "STRUCTURED_OUTPUT_INTERFACE",
+    "recommended_action": "Provide explicit JSON schema formatting prompts and fallback parsing for direct model queries.",
+    "evidence": [
+      "StructuredOutputValidAssertion failed: Structured output invalid: None",
+      "Executed 5 tool actions, modified 0 files",
+      "Dimension 'understanding' scored 0 (complete failure)"
+    ]
+  },
+  {
+    "task_id": "intent_002",
+    "category": "intent_understanding",
+    "difficulty": "medium",
+    "score_percentage": 16.67,
+    "primary_root_cause": "STRUCTURED_OUTPUT_INTERFACE",
+    "recommended_action": "Provide explicit JSON schema formatting prompts and fallback parsing for direct model queries.",
+    "evidence": [
+      "StructuredOutputValidAssertion failed: Structured output invalid: None",
+      "Executed 4 tool actions, modified 0 files",
+      "Dimension 'understanding' scored 0 (complete failure)"
+    ]
+  },
+  {
+    "task_id": "intent_003",
+    "category": "intent_understanding",
+    "difficulty": "easy",
+    "score_percentage": 16.67,
+    "primary_root_cause": "STRUCTURED_OUTPUT_INTERFACE",
+    "recommended_action": "Provide explicit JSON schema formatting prompts and fallback parsing for direct model queries.",
+    "evidence": [
+      "StructuredOutputValidAssertion failed: Structured output invalid: None",
+      "Executed 4 tool actions, modified 0 files",
+      "Dimension 'understanding' scored 0 (complete failure)"
+    ]
+  },
+  {
+    "task_id": "intent_004",
+    "category": "intent_understanding",
+    "difficulty": "medium",
+    "score_percentage": 16.67,
+    "primary_root_cause": "STRUCTURED_OUTPUT_INTERFACE",
+    "recommended_action": "Provide explicit JSON schema formatting prompts and fallback parsing for direct model queries.",
+    "evidence": [
+      "StructuredOutputValidAssertion failed: Structured output invalid: None",
+      "Executed 5 tool actions, modified 0 files",
+      "Dimension 'understanding' scored 0 (complete failure)"
+    ]
+  },
+  {
+    "task_id": "intent_005",
+    "category": "intent_understanding",
+    "difficulty": "easy",
+    "score_percentage": 16.67,
+    "primary_root_cause": "STRUCTURED_OUTPUT_INTERFACE",
+    "recommended_action": "Provide explicit JSON schema formatting prompts and fallback parsing for direct model queries.",
+    "evidence": [
+      "StructuredOutputValidAssertion failed: Structured output invalid: None",
+      "Executed 5 tool actions, modified 0 files",
+      "Dimension 'understanding' scored 0 (complete failure)"
+    ]
+  },
+  {
+    "task_id": "intent_006",
+    "category": "intent_understanding",
+    "difficulty": "hard",
+    "score_percentage": 16.67,
+    "primary_root_cause": "STRUCTURED_OUTPUT_INTERFACE",
+    "recommended_action": "Provide explicit JSON schema formatting prompts and fallback parsing for direct model queries.",
+    "evidence": [
+      "StructuredOutputValidAssertion failed: Structured output invalid: None",
+      "Executed 4 tool actions, modified 0 files",
+      "Dimension 'understanding' scored 0 (complete failure)"
+    ]
+  },
+  {
+    "task_id": "struct_001",
+    "category": "structured_output",
+    "difficulty": "easy",
+    "score_percentage": 16.67,
+    "primary_root_cause": "STRUCTURED_OUTPUT_INTERFACE",
+    "recommended_action": "Provide explicit JSON schema formatting prompts and fallback parsing for direct model queries.",
+    "evidence": [
+      "StructuredOutputValidAssertion failed: Structured output invalid: None",
+      "Dimension 'understanding' scored 0 (complete failure)",
+      "Dimension 'planning' scored 0 (complete failure)"
+    ]
+  },
+  {
+    "task_id": "struct_002",
+    "category": "structured_output",
+    "difficulty": "medium",
+    "score_percentage": 16.67,
+    "primary_root_cause": "STRUCTURED_OUTPUT_INTERFACE",
+    "recommended_action": "Provide explicit JSON schema formatting prompts and fallback parsing for direct model queries.",
+    "evidence": [
+      "StructuredOutputValidAssertion failed: Structured output invalid: None",
+      "Dimension 'understanding' scored 0 (complete failure)",
+      "Dimension 'planning' scored 0 (complete failure)"
+    ]
+  },
+  {
+    "task_id": "struct_003",
+    "category": "structured_output",
+    "difficulty": "medium",
+    "score_percentage": 16.67,
+    "primary_root_cause": "STRUCTURED_OUTPUT_INTERFACE",
+    "recommended_action": "Provide explicit JSON schema formatting prompts and fallback parsing for direct model queries.",
+    "evidence": [
+      "StructuredOutputValidAssertion failed: Structured output invalid: None",
+      "Dimension 'understanding' scored 0 (complete failure)",
+      "Dimension 'planning' scored 0 (complete failure)"
+    ]
+  },
+  {
+    "task_id": "struct_004",
+    "category": "structured_output",
+    "difficulty": "hard",
+    "score_percentage": 16.67,
+    "primary_root_cause": "STRUCTURED_OUTPUT_INTERFACE",
+    "recommended_action": "Provide explicit JSON schema formatting prompts and fallback parsing for direct model queries.",
+    "evidence": [
+      "StructuredOutputValidAssertion failed: Structured output invalid: None",
+      "Dimension 'understanding' scored 0 (complete failure)",
+      "Dimension 'planning' scored 0 (complete failure)"
+    ]
+  },
+  {
+    "task_id": "struct_005",
+    "category": "structured_output",
+    "difficulty": "medium",
+    "score_percentage": 16.67,
+    "primary_root_cause": "STRUCTURED_OUTPUT_INTERFACE",
+    "recommended_action": "Provide explicit JSON schema formatting prompts and fallback parsing for direct model queries.",
+    "evidence": [
+      "StructuredOutputValidAssertion failed: Structured output invalid: None",
+      "Dimension 'understanding' scored 0 (complete failure)",
+      "Dimension 'planning' scored 0 (complete failure)"
+    ]
+  },
+  {
+    "task_id": "struct_006",
+    "category": "structured_output",
+    "difficulty": "easy",
+    "score_percentage": 16.67,
+    "primary_root_cause": "STRUCTURED_OUTPUT_INTERFACE",
+    "recommended_action": "Provide explicit JSON schema formatting prompts and fallback parsing for direct model queries.",
+    "evidence": [
+      "StructuredOutputValidAssertion failed: Structured output invalid: None",
+      "Dimension 'understanding' scored 0 (complete failure)",
+      "Dimension 'planning' scored 0 (complete failure)"
+    ]
+  },
+  {
+    "task_id": "tool_sel_001",
+    "category": "tool_selection",
+    "difficulty": "easy",
+    "score_percentage": 16.67,
+    "primary_root_cause": "STRUCTURED_OUTPUT_INTERFACE",
+    "recommended_action": "Provide explicit JSON schema formatting prompts and fallback parsing for direct model queries.",
+    "evidence": [
+      "StructuredOutputValidAssertion failed: Structured output invalid: None",
+      "Executed 5 tool actions, modified 0 files",
+      "Dimension 'understanding' scored 0 (complete failure)"
+    ]
+  },
+  {
+    "task_id": "tool_sel_002",
+    "category": "tool_selection",
+    "difficulty": "easy",
+    "score_percentage": 16.67,
+    "primary_root_cause": "STRUCTURED_OUTPUT_INTERFACE",
+    "recommended_action": "Provide explicit JSON schema formatting prompts and fallback parsing for direct model queries.",
+    "evidence": [
+      "StructuredOutputValidAssertion failed: Structured output invalid: None",
+      "Executed 5 tool actions, modified 0 files",
+      "Dimension 'understanding' scored 0 (complete failure)"
+    ]
+  },
+  {
+    "task_id": "tool_sel_003",
+    "category": "tool_selection",
+    "difficulty": "medium",
+    "score_percentage": 16.67,
+    "primary_root_cause": "STRUCTURED_OUTPUT_INTERFACE",
+    "recommended_action": "Provide explicit JSON schema formatting prompts and fallback parsing for direct model queries.",
+    "evidence": [
+      "StructuredOutputValidAssertion failed: Structured output invalid: None",
+      "Executed 6 tool actions, modified 0 files",
+      "Dimension 'understanding' scored 0 (complete failure)"
+    ]
+  },
+  {
+    "task_id": "tool_sel_004",
+    "category": "tool_selection",
+    "difficulty": "easy",
+    "score_percentage": 16.67,
+    "primary_root_cause": "STRUCTURED_OUTPUT_INTERFACE",
+    "recommended_action": "Provide explicit JSON schema formatting prompts and fallback parsing for direct model queries.",
+    "evidence": [
+      "StructuredOutputValidAssertion failed: Structured output invalid: None",
+      "Executed 5 tool actions, modified 0 files",
+      "Dimension 'understanding' scored 0 (complete failure)"
+    ]
+  },
+  {
+    "task_id": "tool_sel_005",
+    "category": "tool_selection",
+    "difficulty": "medium",
+    "score_percentage": 16.67,
+    "primary_root_cause": "STRUCTURED_OUTPUT_INTERFACE",
+    "recommended_action": "Provide explicit JSON schema formatting prompts and fallback parsing for direct model queries.",
+    "evidence": [
+      "StructuredOutputValidAssertion failed: Structured output invalid: None",
+      "Executed 5 tool actions, modified 0 files",
+      "Dimension 'understanding' scored 0 (complete failure)"
+    ]
+  },
+  {
+    "task_id": "tool_sel_006",
+    "category": "tool_selection",
+    "difficulty": "medium",
+    "score_percentage": 16.67,
+    "primary_root_cause": "STRUCTURED_OUTPUT_INTERFACE",
+    "recommended_action": "Provide explicit JSON schema formatting prompts and fallback parsing for direct model queries.",
+    "evidence": [
+      "StructuredOutputValidAssertion failed: Structured output invalid: None",
+      "Executed 4 tool actions, modified 0 files",
+      "Dimension 'understanding' scored 0 (complete failure)"
+    ]
+  }
+]

@@ -1,0 +1,25 @@
+{
+  "id": "ctx_003",
+  "version": "1.0",
+  "category": "context_usage",
+  "difficulty": "medium",
+  "split": "test",
+  "prompt": "Modify calculator.py without modifying test_calculator.py.",
+  "project_template": "python_buggy",
+  "expected_behavior": {},
+  "required_files": [],
+  "required_symbols": [],
+  "forbidden_actions": [],
+  "assertions": [
+    {
+      "type": "DiffWithinExpectedScopeAssertion",
+      "allowed_files": [
+        "calculator.py"
+      ]
+    }
+  ],
+  "timeout_seconds": 60,
+  "tags": [
+    "context_scoping"
+  ]
+}

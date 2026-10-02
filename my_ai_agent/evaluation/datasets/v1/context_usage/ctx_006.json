@@ -1,0 +1,22 @@
+{
+  "id": "ctx_006",
+  "version": "1.0",
+  "category": "context_usage",
+  "difficulty": "hard",
+  "split": "test",
+  "prompt": "Operate within allowed file modifications in python_basic.",
+  "project_template": "python_basic",
+  "expected_behavior": {},
+  "required_files": [],
+  "required_symbols": [],
+  "forbidden_actions": [],
+  "assertions": [
+    {
+      "type": "NoProtectedFileChangedAssertion"
+    }
+  ],
+  "timeout_seconds": 60,
+  "tags": [
+    "context_scoping"
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "id": "code_mod_001",
+  "version": "1.0",
+  "category": "code_modification",
+  "difficulty": "medium",
+  "split": "test",
+  "prompt": "Add a logout method to AuthService in auth_service.py removing the token.",
+  "project_template": "python_auth",
+  "expected_behavior": {},
+  "required_files": [],
+  "required_symbols": [],
+  "forbidden_actions": [],
+  "assertions": [
+    {
+      "type": "FileExistsAssertion",
+      "file": "auth_service.py"
+    },
+    {
+      "type": "SyntaxValidAssertion",
+      "file": "auth_service.py"
+    },
+    {
+      "type": "SymbolExistsAssertion",
+      "file": "auth_service.py",
+      "symbol": "logout"
+    },
+    {
+      "type": "SymbolCountAssertion",
+      "file": "auth_service.py",
+      "symbol": "logout",
+      "count": 1
+    },
+    {
+      "type": "SymbolExistsAssertion",
+      "file": "auth_service.py",
+      "symbol": "login"
+    }
+  ],
+  "timeout_seconds": 60,
+  "tags": [
+    "patch",
+    "auth"
+  ]
+}

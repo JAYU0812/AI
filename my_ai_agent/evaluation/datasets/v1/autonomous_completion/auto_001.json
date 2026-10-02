@@ -1,0 +1,33 @@
+{
+  "id": "auto_001",
+  "version": "1.0",
+  "category": "autonomous_completion",
+  "difficulty": "medium",
+  "split": "test",
+  "prompt": "Add multiply function to utils.py, update test_utils.py with test_multiply, and verify all tests pass.",
+  "project_template": "python_basic",
+  "expected_behavior": {},
+  "required_files": [],
+  "required_symbols": [],
+  "forbidden_actions": [],
+  "assertions": [
+    {
+      "type": "FileExistsAssertion",
+      "file": "utils.py"
+    },
+    {
+      "type": "SymbolExistsAssertion",
+      "file": "utils.py",
+      "symbol": "multiply"
+    },
+    {
+      "type": "TestsPassAssertion",
+      "test_command": null
+    }
+  ],
+  "timeout_seconds": 60,
+  "tags": [
+    "autonomous",
+    "end_to_end"
+  ]
+}

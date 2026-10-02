@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My AI — Your Personal AI Agent</title>
+  <meta name="description" content="An AI agent that builds real software for you. Give it a task. Watch it work.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+<div id="app">
+
+  <!-- ═══════════════════════════════════════════════
+       SCREEN 1: PROJECT HOME
+  ═══════════════════════════════════════════════ -->
+  <div id="screen-home" class="screen active">
+    <div class="home-layout">
+
+      <!-- Top bar -->
+      <header class="home-topbar">
+        <div class="app-wordmark">My AI</div>
+        <button class="topbar-settings-btn" id="btnHomeSettings" title="Settings">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83-2.83l.06-.06A1.65 1.65 0 0 0 4.68 15a1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 2.83-2.83l.06.06A1.65 1.65 0 0 0 9 4.68a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 2.83l-.06.06A1.65 1.65 0 0 0 19.4 9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg>
+        </button>
+      </header>
+
+      <!-- Hero -->
+      <main class="home-hero">
+        <div class="home-hero-content">
+          <p class="home-hero-eyebrow">Your AI Agent</p>
+          <h1 class="home-hero-title">What do you want to build?</h1>
+          <p class="home-hero-sub">Tell your agent what to create. It will write code,<br>run it, fix errors, and report back — autonomously.</p>
+
+          <div class="home-cta-row">
+            <button class="btn-primary-lg" id="btnNewProject">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+              New Project
+            </button>
+            <button class="btn-secondary-lg" id="btnOpenExisting">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"/></svg>
+              Open Folder
+            </button>
+          </div>
+        </div>
+      </main>
+
+      <!-- Projects section -->
+      <section class="home-projects-section" id="homeProjectsSection">
+        <div class="home-projects-header">
+          <h2 class="home-projects-title">Your Projects</h2>
+        </div>
+
+        <!-- Projects grid — populated by JS -->
+        <div class="home-projects-grid" id="projectsGrid">
+          <div class="projects-loading">Loading your projects…</div>
+        </div>
+
+        <!-- Empty state (shown by JS when no projects) -->
+        <div class="home-empty-state" id="homeEmptyState" style="display:none">
+          <div class="empty-icon-wrap">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+          </div>
+          <p class="empty-title">No projects yet</p>
+          <p class="empty-sub">Create a project to start working with your AI agent.</p>
+          <button class="btn-primary" id="btnEmptyNewProject">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+            Create Project
+          </button>
+        </div>
+      </section>
+
+    </div>
+  </div>
+
+  <!-- ═══════════════════════════════════════════════
+       SCREEN 3: AGENT WORKSPACE
+  ═══════════════════════════════════════════════ -->
+  <div id="screen-workspace" class="screen">
+    <div class="ws-layout">
+
+      <!-- Workspace top bar -->
+      <header class="ws-topbar">
+        <div class="ws-topbar-left">
+          <button class="ws-back-btn" id="btnWsBack" title="Back to projects">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="15 18 9 12 15 6"/></svg>
+          </button>
+          <span class="ws-project-name" id="wsProjectName">Project</span>
+        </div>
+        <div class="ws-topbar-center" style="display:flex; align-items:center; gap:8px;">
+          <div class="agent-status-pill" id="agentStatusPill">
+            <span class="agent-status-dot" id="agentStatusDot"></span>
+            <span class="agent-status-label" id="agentStatusLabel">Ready</span>
+          </div>
+          <div class="model-status-pill" id="modelStatusPill" style="display:inline-flex; align-items:center; gap:6px; font-size:11px; padding:3px 10px; border-radius:20px; background:rgba(255,255,255,0.05); border:1px solid rgba(255,255,255,0.1); color:#94a3b8;" title="Active Intelligence Model">
+            <span class="model-status-dot" id="modelStatusDot" style="width:6px; height:6px; border-radius:50%; background:#10b981;"></span>
+            <span class="model-status-label" id="modelStatusLabel">Model: Deterministic</span>
+          </div>
+        </div>
+        <div class="ws-topbar-right">
+          <button class="ws-topbar-btn" id="btnClearChat" title="Clear conversation history">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><polyline points="3 6 5 6 21 6"/><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/></svg>
+            Clear
+          </button>
+          <button class="ws-topbar-btn" id="btnToggleFiles" title="Show changed files">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+            Files
+          </button>
+        </div>
+      </header>
+
+      <!-- Main workspace body -->
+      <div class="ws-body" id="wsBody">
+
+        <!-- Conversation column -->
+        <div class="ws-conversation-col" id="wsConversationCol">
+
+          <!-- Step 3B: Project Understanding Bar -->
+          <div class="project-understanding-bar" id="projectUnderstandingBar" style="display:none;">
+            <div class="pub-summary">
+              <span class="pub-tech" id="pubTech">Python</span>
+              <span class="pub-sep">·</span>
+              <span class="pub-stat" id="pubFilesCount">0 files</span>
+              <span class="pub-sep">·</span>
+              <span class="pub-stat" id="pubTestsCount">0 tests</span>
+              <span class="pub-sep">·</span>
+              <span class="pub-stat" id="pubDepsCount">0 deps</span>
+            </div>
+            <button class="pub-toggle-btn" id="btnTogglePubDetails">View Project Understanding ▾</button>
+          </div>
+          <div class="project-understanding-details" id="projectUnderstandingDetails" style="display:none;"></div>
+
+          <!-- Thread -->
+          <div class="conversation-thread" id="conversationThread">
+            <!-- Agent welcome — rendered by JS after project loads -->
+          </div>
+
+          <!-- Scroll anchor -->
+          <div id="threadBottom"></div>
+        </div>
+
+        <!-- Files panel (hidden by default, slides in) -->
+        <aside class="ws-files-panel" id="wsFilesPanel" aria-hidden="true">
+          <div class="files-panel-header">
+            <span class="files-panel-title">Project Files</span>
+            <button class="files-panel-close" id="btnCloseFiles">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+            </button>
+          </div>
+          <div class="files-panel-path" id="filesPanelPath"></div>
+          <div class="files-list" id="filesList">
+            <div class="files-loading">Loading files…</div>
+          </div>
+
+          <!-- File viewer -->
+          <div class="file-viewer" id="fileViewer" style="display:none">
+            <div class="file-viewer-header">
+              <button class="file-viewer-back" id="btnFileViewerBack">
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="15 18 9 12 15 6"/></svg>
+                Back
+              </button>
+              <span class="file-viewer-name" id="fileViewerName"></span>
+            </div>
+            <pre class="file-viewer-content" id="fileViewerContent"></pre>
+          </div>
+        </aside>
+
+      </div>
+
+      <!-- Input bar -->
+      <div class="ws-input-bar" id="wsInputBar">
+        <div class="ws-input-wrap">
+          <textarea
+            id="agentInput"
+            class="agent-textarea"
+            placeholder="Tell your agent what to build, change, or fix…"
+            rows="1"
+          ></textarea>
+          <button class="agent-send-btn" id="btnSend" disabled>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+          </button>
+        </div>
+        <div class="ws-input-meta">
+          <span class="ws-project-path" id="wsProjectPath"></span>
+          <span class="ws-input-hint">Enter to send · Shift+Enter for new line</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</div><!-- #app -->
+
+<!-- ═══════════════════════════════════════════════
+     MODAL: CREATE PROJECT
+═══════════════════════════════════════════════ -->
+<div class="modal-overlay" id="createProjectOverlay" aria-hidden="true">
+  <div class="modal create-project-modal" role="dialog" aria-modal="true" aria-labelledby="cpModalTitle">
+    <div class="modal-header">
+      <h2 class="modal-title" id="cpModalTitle">Create Project</h2>
+      <button class="modal-close-btn" id="btnCpClose" aria-label="Close">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+      </button>
+    </div>
+    <div class="modal-body">
+      <div class="form-field">
+        <label class="form-label" for="cpName">Project name</label>
+        <input type="text" id="cpName" class="form-input" placeholder="e.g. My Website, Calculator App…" autocomplete="off">
+      </div>
+      <div class="form-field">
+        <label class="form-label" for="cpLocation">Save location</label>
+        <input type="text" id="cpLocation" class="form-input form-input-mono" value="C:\jay\Projects" autocomplete="off">
+        <p class="form-hint" id="cpPathHint">The agent will work inside this folder.</p>
+      </div>
+      <div class="form-field">
+        <label class="form-label">Start with</label>
+        <div class="template-row">
+          <button class="template-opt selected" data-tmpl="empty" id="tmplEmpty">
+            <span class="tmpl-icon">📁</span>
+            <span class="tmpl-label">Empty</span>
+          </button>
+          <button class="template-opt" data-tmpl="python" id="tmplPython">
+            <span class="tmpl-icon">🐍</span>
+            <span class="tmpl-label">Python</span>
+          </button>
+          <button class="template-opt" data-tmpl="web" id="tmplWeb">
+            <span class="tmpl-icon">🌐</span>
+            <span class="tmpl-label">Web</span>
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="modal-footer">
+      <button class="btn-modal-cancel" id="btnCpCancel">Cancel</button>
+      <button class="btn-modal-confirm" id="btnCpCreate">Create Project</button>
+    </div>
+  </div>
+</div>
+
+<!-- MODAL: OPEN FOLDER -->
+<div class="modal-overlay" id="openFolderOverlay" aria-hidden="true">
+  <div class="modal" role="dialog" aria-modal="true" aria-labelledby="ofModalTitle">
+    <div class="modal-header">
+      <h2 class="modal-title" id="ofModalTitle">Open Project Folder</h2>
+      <button class="modal-close-btn" id="btnOfClose" aria-label="Close">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+      </button>
+    </div>
+    <div class="modal-body">
+      <div class="form-field">
+        <label class="form-label" for="ofPath">Folder path</label>
+        <input type="text" id="ofPath" class="form-input form-input-mono" placeholder="C:\Users\jay\my-project" autocomplete="off">
+        <p class="form-hint">The agent will work directly inside this directory.</p>
+      </div>
+    </div>
+    <div class="modal-footer">
+      <button class="btn-modal-cancel" id="btnOfCancel">Cancel</button>
+      <button class="btn-modal-confirm" id="btnOfOpen">Open</button>
+    </div>
+  </div>
+</div>
+
+<!-- MODAL: FILE CONTENT VIEWER -->
+<div class="modal-overlay" id="fileModalOverlay" aria-hidden="true">
+  <div class="modal file-content-modal" role="dialog" aria-modal="true">
+    <div class="modal-header">
+      <span class="modal-title" id="fileModalTitle">File</span>
+      <button class="modal-close-btn" id="btnFileModalClose">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+      </button>
+    </div>
+    <div class="modal-body file-modal-body">
+      <pre class="file-modal-content" id="fileModalContent"></pre>
+    </div>
+  </div>
+</div>
+
+<!-- Global status/loading -->
+<div class="global-loader" id="globalLoader" aria-hidden="true">
+  <div class="loader-inner">
+    <div class="loader-spinner"></div>
+    <p class="loader-msg" id="loaderMsg">Working…</p>
+  </div>
+</div>
+
+<!-- Toast container -->
+<div class="toast-stack" id="toastStack" aria-live="polite"></div>
+
+<script src="/static/app.js"></script>
+</body>
+</html>

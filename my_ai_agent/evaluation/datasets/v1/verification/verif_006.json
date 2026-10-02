@@ -1,0 +1,23 @@
+{
+  "id": "verif_006",
+  "version": "1.0",
+  "category": "verification",
+  "difficulty": "hard",
+  "split": "test",
+  "prompt": "Verify that main.py in python_basic executes with exit code 0.",
+  "project_template": "python_basic",
+  "expected_behavior": {},
+  "required_files": [],
+  "required_symbols": [],
+  "forbidden_actions": [],
+  "assertions": [
+    {
+      "type": "CommandSucceedsAssertion",
+      "command": "python main.py"
+    }
+  ],
+  "timeout_seconds": 60,
+  "tags": [
+    "verification"
+  ]
+}

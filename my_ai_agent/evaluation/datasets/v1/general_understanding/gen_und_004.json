@@ -1,0 +1,23 @@
+{
+  "id": "gen_und_004",
+  "version": "1.0",
+  "category": "general_understanding",
+  "difficulty": "medium",
+  "split": "validation",
+  "prompt": "Explain how AuthService manages active user sessions.",
+  "project_template": "python_auth",
+  "expected_behavior": {},
+  "required_files": [],
+  "required_symbols": [],
+  "forbidden_actions": [],
+  "assertions": [
+    {
+      "type": "OutputContainsAssertion",
+      "text": "session"
+    }
+  ],
+  "timeout_seconds": 60,
+  "tags": [
+    "auth_architecture"
+  ]
+}

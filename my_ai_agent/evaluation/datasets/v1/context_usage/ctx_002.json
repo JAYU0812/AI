@@ -1,0 +1,30 @@
+{
+  "id": "ctx_002",
+  "version": "1.0",
+  "category": "context_usage",
+  "difficulty": "medium",
+  "split": "development",
+  "prompt": "Modify auth_service.py to add logout without modifying test_auth.py.",
+  "project_template": "python_auth",
+  "expected_behavior": {},
+  "required_files": [],
+  "required_symbols": [],
+  "forbidden_actions": [],
+  "assertions": [
+    {
+      "type": "SymbolExistsAssertion",
+      "file": "auth_service.py",
+      "symbol": "logout"
+    },
+    {
+      "type": "DiffWithinExpectedScopeAssertion",
+      "allowed_files": [
+        "auth_service.py"
+      ]
+    }
+  ],
+  "timeout_seconds": 60,
+  "tags": [
+    "context_scoping"
+  ]
+}

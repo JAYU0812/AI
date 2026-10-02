@@ -1,0 +1,92 @@
+{
+  "summary": {
+    "total_generated": 42,
+    "total_accepted": 42,
+    "total_rejected": 0,
+    "acceptance_rate_percentage": 100.0,
+    "average_quality_score": 1.0
+  },
+  "splits": {
+    "train_count": 32,
+    "train_percentage": 76.19,
+    "validation_count": 5,
+    "validation_percentage": 11.9,
+    "test_count": 5,
+    "test_percentage": 11.9
+  },
+  "quality_distribution": {
+    "0.85-0.89": 0,
+    "0.90-0.94": 0,
+    "0.95-1.00": 42
+  },
+  "rejections": {},
+  "domains": {
+    "code_generation": {
+      "count": 12,
+      "percentage": 28.57
+    },
+    "code_modification": {
+      "count": 7,
+      "percentage": 16.67
+    },
+    "structured_output": {
+      "count": 18,
+      "percentage": 42.86
+    },
+    "instruction_following": {
+      "count": 5,
+      "percentage": 11.9
+    }
+  },
+  "difficulties": {
+    "easy": {
+      "count": 18,
+      "percentage": 42.86
+    },
+    "medium": {
+      "count": 18,
+      "percentage": 42.86
+    },
+    "hard": {
+      "count": 6,
+      "percentage": 14.29
+    }
+  },
+  "output_types": {
+    "code": {
+      "count": 24,
+      "percentage": 57.14
+    },
+    "json": {
+      "count": 18,
+      "percentage": 42.86
+    }
+  },
+  "root_causes": {
+    "MODEL_CAPABILITY": {
+      "count": 19,
+      "percentage": 45.24
+    },
+    "STRUCTURED_OUTPUT_INTERFACE": {
+      "count": 18,
+      "percentage": 42.86
+    },
+    "PROMPT_DESIGN": {
+      "count": 5,
+      "percentage": 11.9
+    }
+  },
+  "provenance": {
+    "unique_source_candidates_covered": 40,
+    "coverage_of_40_candidates_percentage": 100.0,
+    "augmentation_breakdown": {
+      "canonical": 40,
+      "input_variation": 1,
+      "boundary_variation": 1
+    }
+  },
+  "balance_status": {
+    "is_balanced": true,
+    "max_domain_share_percentage": 42.86
+  }
+}

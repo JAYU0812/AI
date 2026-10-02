@@ -1,0 +1,23 @@
+{
+  "id": "tool_sel_005",
+  "version": "1.0",
+  "category": "tool_selection",
+  "difficulty": "medium",
+  "split": "validation",
+  "prompt": "Run main.py using RUN_COMMAND.",
+  "project_template": "python_basic",
+  "expected_behavior": {},
+  "required_files": [],
+  "required_symbols": [],
+  "forbidden_actions": [],
+  "assertions": [
+    {
+      "type": "StructuredOutputValidAssertion",
+      "schema_type": null
+    }
+  ],
+  "timeout_seconds": 60,
+  "tags": [
+    "tool_selection"
+  ]
+}

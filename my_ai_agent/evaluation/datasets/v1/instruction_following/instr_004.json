@@ -1,0 +1,28 @@
+{
+  "id": "instr_004",
+  "version": "1.0",
+  "category": "instruction_following",
+  "difficulty": "hard",
+  "split": "validation",
+  "prompt": "Add power function to calculator.py and ensure syntax is valid.",
+  "project_template": "python_buggy",
+  "expected_behavior": {},
+  "required_files": [],
+  "required_symbols": [],
+  "forbidden_actions": [],
+  "assertions": [
+    {
+      "type": "SymbolExistsAssertion",
+      "file": "calculator.py",
+      "symbol": "power"
+    },
+    {
+      "type": "SyntaxValidAssertion",
+      "file": "calculator.py"
+    }
+  ],
+  "timeout_seconds": 60,
+  "tags": [
+    "instruction_following"
+  ]
+}

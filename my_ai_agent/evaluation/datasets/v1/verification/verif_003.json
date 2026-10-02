@@ -1,0 +1,23 @@
+{
+  "id": "verif_003",
+  "version": "1.0",
+  "category": "verification",
+  "difficulty": "easy",
+  "split": "test",
+  "prompt": "Verify test suite in python_cli.",
+  "project_template": "python_cli",
+  "expected_behavior": {},
+  "required_files": [],
+  "required_symbols": [],
+  "forbidden_actions": [],
+  "assertions": [
+    {
+      "type": "TestsPassAssertion",
+      "test_command": null
+    }
+  ],
+  "timeout_seconds": 60,
+  "tags": [
+    "verification"
+  ]
+}

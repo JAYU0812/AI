@@ -1,0 +1,27 @@
+{
+  "id": "debug_002",
+  "version": "1.0",
+  "category": "debugging",
+  "difficulty": "easy",
+  "split": "development",
+  "prompt": "Repair arithmetic bug in calculator.py where divide multiplies.",
+  "project_template": "python_buggy",
+  "expected_behavior": {},
+  "required_files": [],
+  "required_symbols": [],
+  "forbidden_actions": [],
+  "assertions": [
+    {
+      "type": "FileExistsAssertion",
+      "file": "calculator.py"
+    },
+    {
+      "type": "TestsPassAssertion",
+      "test_command": null
+    }
+  ],
+  "timeout_seconds": 60,
+  "tags": [
+    "debugging"
+  ]
+}

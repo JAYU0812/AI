@@ -1,0 +1,23 @@
+{
+  "id": "gen_und_006",
+  "version": "1.0",
+  "category": "general_understanding",
+  "difficulty": "hard",
+  "split": "test",
+  "prompt": "Trace the dependencies between main.py and utils.py in python_basic.",
+  "project_template": "python_basic",
+  "expected_behavior": {},
+  "required_files": [],
+  "required_symbols": [],
+  "forbidden_actions": [],
+  "assertions": [
+    {
+      "type": "OutputContainsAssertion",
+      "text": "utils"
+    }
+  ],
+  "timeout_seconds": 60,
+  "tags": [
+    "dependency_tracing"
+  ]
+}

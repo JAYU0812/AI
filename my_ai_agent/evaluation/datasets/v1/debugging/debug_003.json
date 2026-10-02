@@ -1,0 +1,28 @@
+{
+  "id": "debug_003",
+  "version": "1.0",
+  "category": "debugging",
+  "difficulty": "medium",
+  "split": "test",
+  "prompt": "Fix divide function in calculator.py to return a / b.",
+  "project_template": "python_buggy",
+  "expected_behavior": {},
+  "required_files": [],
+  "required_symbols": [],
+  "forbidden_actions": [],
+  "assertions": [
+    {
+      "type": "FileContainsAssertion",
+      "file": "calculator.py",
+      "text": "/"
+    },
+    {
+      "type": "TestsPassAssertion",
+      "test_command": null
+    }
+  ],
+  "timeout_seconds": 60,
+  "tags": [
+    "debugging"
+  ]
+}

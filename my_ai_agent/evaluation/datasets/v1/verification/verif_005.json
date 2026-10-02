@@ -1,0 +1,24 @@
+{
+  "id": "verif_005",
+  "version": "1.0",
+  "category": "verification",
+  "difficulty": "hard",
+  "split": "validation",
+  "prompt": "Verify that python cli.py runs successfully.",
+  "project_template": "python_cli",
+  "expected_behavior": {},
+  "required_files": [],
+  "required_symbols": [],
+  "forbidden_actions": [],
+  "assertions": [
+    {
+      "type": "CommandSucceedsAssertion",
+      "command": "python cli.py greet"
+    }
+  ],
+  "timeout_seconds": 60,
+  "tags": [
+    "verification",
+    "command"
+  ]
+}

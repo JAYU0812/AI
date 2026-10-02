@@ -1,0 +1,24 @@
+{
+  "id": "proj_und_006",
+  "version": "1.0",
+  "category": "project_understanding",
+  "difficulty": "medium",
+  "split": "test",
+  "prompt": "Find the login function in python_auth.",
+  "project_template": "python_auth",
+  "expected_behavior": {},
+  "required_files": [],
+  "required_symbols": [],
+  "forbidden_actions": [],
+  "assertions": [
+    {
+      "type": "SymbolExistsAssertion",
+      "file": "auth_service.py",
+      "symbol": "login"
+    }
+  ],
+  "timeout_seconds": 60,
+  "tags": [
+    "symbol_inspection"
+  ]
+}

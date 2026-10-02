@@ -1,0 +1,23 @@
+{
+  "id": "tool_sel_006",
+  "version": "1.0",
+  "category": "tool_selection",
+  "difficulty": "medium",
+  "split": "test",
+  "prompt": "Verify syntax of auth_service.py using VERIFY.",
+  "project_template": "python_auth",
+  "expected_behavior": {},
+  "required_files": [],
+  "required_symbols": [],
+  "forbidden_actions": [],
+  "assertions": [
+    {
+      "type": "StructuredOutputValidAssertion",
+      "schema_type": null
+    }
+  ],
+  "timeout_seconds": 60,
+  "tags": [
+    "tool_selection"
+  ]
+}

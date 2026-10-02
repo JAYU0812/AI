@@ -1,0 +1,24 @@
+{
+  "id": "verif_001",
+  "version": "1.0",
+  "category": "verification",
+  "difficulty": "easy",
+  "split": "test",
+  "prompt": "Run test suite in python_basic and verify all tests pass.",
+  "project_template": "python_basic",
+  "expected_behavior": {},
+  "required_files": [],
+  "required_symbols": [],
+  "forbidden_actions": [],
+  "assertions": [
+    {
+      "type": "TestsPassAssertion",
+      "test_command": null
+    }
+  ],
+  "timeout_seconds": 60,
+  "tags": [
+    "verification",
+    "tests"
+  ]
+}

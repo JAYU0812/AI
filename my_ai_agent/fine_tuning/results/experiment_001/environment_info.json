@@ -1,0 +1,26 @@
+{
+  "os": "Windows 11 10.0.26200",
+  "python": "3.12.14",
+  "machine": "AMD64",
+  "cpu": "Intel64 Family 6 Model 142 Stepping 10, GenuineIntel",
+  "ram_gb": 15.9,
+  "cuda_available": false,
+  "cuda_device_count": 0,
+  "cuda_version": null,
+  "gpu": "Intel UHD Graphics 620 (no CUDA)",
+  "acceleration": "CPU_ONLY",
+  "torch": "2.14.1+cpu",
+  "transformers": "5.18.0",
+  "peft": "0.21.2",
+  "accelerate": "1.15.0",
+  "datasets": "not installed",
+  "tokenizers": "0.23.2",
+  "hardware_verdict": {
+    "cuda_available": false,
+    "acceleration": "CPU_ONLY",
+    "approach": "LoRA on CPU (float32)",
+    "full_fine_tuning_feasible": false,
+    "qlora_applicable": false,
+    "lora_feasible": true
+  }
+}

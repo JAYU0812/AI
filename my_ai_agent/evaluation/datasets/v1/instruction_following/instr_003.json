@@ -1,0 +1,35 @@
+{
+  "id": "instr_003",
+  "version": "1.0",
+  "category": "instruction_following",
+  "difficulty": "medium",
+  "split": "test",
+  "prompt": "Add divide function to utils.py without deleting add or subtract.",
+  "project_template": "python_basic",
+  "expected_behavior": {},
+  "required_files": [],
+  "required_symbols": [],
+  "forbidden_actions": [],
+  "assertions": [
+    {
+      "type": "SymbolExistsAssertion",
+      "file": "utils.py",
+      "symbol": "add"
+    },
+    {
+      "type": "SymbolExistsAssertion",
+      "file": "utils.py",
+      "symbol": "subtract"
+    },
+    {
+      "type": "SymbolExistsAssertion",
+      "file": "utils.py",
+      "symbol": "divide"
+    }
+  ],
+  "timeout_seconds": 60,
+  "tags": [
+    "instruction_following",
+    "preservation"
+  ]
+}

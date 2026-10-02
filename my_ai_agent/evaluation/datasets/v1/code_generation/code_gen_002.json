@@ -1,0 +1,33 @@
+{
+  "id": "code_gen_002",
+  "version": "1.0",
+  "category": "code_generation",
+  "difficulty": "medium",
+  "split": "development",
+  "prompt": "Create a Python function divide in utils.py that handles division by zero.",
+  "project_template": "python_basic",
+  "expected_behavior": {},
+  "required_files": [],
+  "required_symbols": [],
+  "forbidden_actions": [],
+  "assertions": [
+    {
+      "type": "FileExistsAssertion",
+      "file": "utils.py"
+    },
+    {
+      "type": "SyntaxValidAssertion",
+      "file": "utils.py"
+    },
+    {
+      "type": "SymbolExistsAssertion",
+      "file": "utils.py",
+      "symbol": "divide"
+    }
+  ],
+  "timeout_seconds": 60,
+  "tags": [
+    "code_gen",
+    "error_handling"
+  ]
+}

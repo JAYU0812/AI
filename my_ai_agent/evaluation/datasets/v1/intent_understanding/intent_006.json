@@ -1,0 +1,23 @@
+{
+  "id": "intent_006",
+  "version": "1.0",
+  "category": "intent_understanding",
+  "difficulty": "hard",
+  "split": "test",
+  "prompt": "Refactor authentication token generation to include timestamp.",
+  "project_template": "python_auth",
+  "expected_behavior": {},
+  "required_files": [],
+  "required_symbols": [],
+  "forbidden_actions": [],
+  "assertions": [
+    {
+      "type": "StructuredOutputValidAssertion",
+      "schema_type": null
+    }
+  ],
+  "timeout_seconds": 60,
+  "tags": [
+    "intent_refactor"
+  ]
+}

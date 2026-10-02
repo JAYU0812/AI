@@ -1,0 +1,23 @@
+{
+  "id": "struct_006",
+  "version": "1.0",
+  "category": "structured_output",
+  "difficulty": "easy",
+  "split": "test",
+  "prompt": "Generate structured decision for verifying auth_service.py.",
+  "project_template": "python_auth",
+  "expected_behavior": {},
+  "required_files": [],
+  "required_symbols": [],
+  "forbidden_actions": [],
+  "assertions": [
+    {
+      "type": "StructuredOutputValidAssertion",
+      "schema_type": null
+    }
+  ],
+  "timeout_seconds": 60,
+  "tags": [
+    "schema_validation"
+  ]
+}

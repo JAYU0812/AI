@@ -1,0 +1,28 @@
+{
+  "id": "multi_005",
+  "version": "1.0",
+  "category": "multi_step",
+  "difficulty": "hard",
+  "split": "test",
+  "prompt": "Add power function to utils.py, add test_power to test_utils.py, and run tests.",
+  "project_template": "python_basic",
+  "expected_behavior": {},
+  "required_files": [],
+  "required_symbols": [],
+  "forbidden_actions": [],
+  "assertions": [
+    {
+      "type": "SymbolExistsAssertion",
+      "file": "utils.py",
+      "symbol": "power"
+    },
+    {
+      "type": "TestsPassAssertion",
+      "test_command": null
+    }
+  ],
+  "timeout_seconds": 60,
+  "tags": [
+    "multi_step"
+  ]
+}

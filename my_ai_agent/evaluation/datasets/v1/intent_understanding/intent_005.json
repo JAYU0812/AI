@@ -1,0 +1,23 @@
+{
+  "id": "intent_005",
+  "version": "1.0",
+  "category": "intent_understanding",
+  "difficulty": "easy",
+  "split": "validation",
+  "prompt": "Run the test suite and report if any tests failed.",
+  "project_template": "python_basic",
+  "expected_behavior": {},
+  "required_files": [],
+  "required_symbols": [],
+  "forbidden_actions": [],
+  "assertions": [
+    {
+      "type": "StructuredOutputValidAssertion",
+      "schema_type": null
+    }
+  ],
+  "timeout_seconds": 60,
+  "tags": [
+    "intent_testing"
+  ]
+}

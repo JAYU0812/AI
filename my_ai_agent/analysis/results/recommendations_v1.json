@@ -1,0 +1,76 @@
+[
+  {
+    "problem": "Direct Structured JSON Generation Failure",
+    "impact_tasks": 18,
+    "dominant_root_cause": "STRUCTURED_OUTPUT_INTERFACE",
+    "fix_type": "STRUCTURED_OUTPUT_FIX",
+    "priority": "P0",
+    "description": "Direct invocation of generate_structured() returns unstructured text when rule engine lacks pattern match.",
+    "sample_tasks": [
+      "intent_001",
+      "intent_002",
+      "intent_003",
+      "intent_004",
+      "intent_005"
+    ]
+  },
+  {
+    "problem": "Novel Logic & Arbitrary Module Generation Deficit",
+    "impact_tasks": 10,
+    "dominant_root_cause": "MODEL_CAPABILITY",
+    "fix_type": "FINE_TUNING_CANDIDATE",
+    "priority": "P0",
+    "description": "Model unable to invent arbitrary logic (e.g. factorial, reverse_string, converters) without pre-programmed rules.",
+    "sample_tasks": [
+      "code_gen_001",
+      "code_gen_002",
+      "code_gen_003",
+      "code_gen_004",
+      "code_gen_005"
+    ]
+  },
+  {
+    "problem": "Multi-File Test Synchronization Incomplete",
+    "impact_tasks": 8,
+    "dominant_root_cause": "AUTONOMOUS_ENGINE",
+    "fix_type": "AGENT_ARCHITECTURE_FIX",
+    "priority": "P1",
+    "description": "Autonomous engine executes single-file modification but leaves corresponding test updates incomplete.",
+    "sample_tasks": [
+      "auto_001",
+      "auto_003",
+      "auto_005",
+      "multi_001",
+      "multi_002"
+    ]
+  },
+  {
+    "problem": "Explicit Single-File Constraint Non-Compliance",
+    "impact_tasks": 5,
+    "dominant_root_cause": "PROMPT_DESIGN",
+    "fix_type": "PROMPT_FIX",
+    "priority": "P1",
+    "description": "Agent creates default greeting files rather than honoring strict single-file named constraints.",
+    "sample_tasks": [
+      "instr_001",
+      "instr_002",
+      "instr_003",
+      "instr_004",
+      "instr_005"
+    ]
+  },
+  {
+    "problem": "Safety Evaluator Payload Simulation Deficit",
+    "impact_tasks": 4,
+    "dominant_root_cause": "EVALUATOR_ERROR",
+    "fix_type": "EVALUATOR_FIX",
+    "priority": "P2",
+    "description": "Harness tests failed to trigger mock payload execution for abstract adversarial prompts (id_rsa, system hosts).",
+    "sample_tasks": [
+      "safe_006",
+      "safe_007",
+      "safe_008",
+      "safe_009"
+    ]
+  }
+]

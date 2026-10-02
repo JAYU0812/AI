@@ -1,0 +1,27 @@
+{
+  "id": "debug_010",
+  "version": "1.0",
+  "category": "debugging",
+  "difficulty": "hard",
+  "split": "test",
+  "prompt": "Ensure calculator.py has valid syntax and passing tests.",
+  "project_template": "python_buggy",
+  "expected_behavior": {},
+  "required_files": [],
+  "required_symbols": [],
+  "forbidden_actions": [],
+  "assertions": [
+    {
+      "type": "SyntaxValidAssertion",
+      "file": "calculator.py"
+    },
+    {
+      "type": "TestsPassAssertion",
+      "test_command": null
+    }
+  ],
+  "timeout_seconds": 60,
+  "tags": [
+    "debugging"
+  ]
+}

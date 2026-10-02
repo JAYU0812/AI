@@ -1,0 +1,23 @@
+{
+  "id": "proj_und_004",
+  "version": "1.0",
+  "category": "project_understanding",
+  "difficulty": "easy",
+  "split": "test",
+  "prompt": "Locate the test file for utils.py in python_basic.",
+  "project_template": "python_basic",
+  "expected_behavior": {},
+  "required_files": [],
+  "required_symbols": [],
+  "forbidden_actions": [],
+  "assertions": [
+    {
+      "type": "FileExistsAssertion",
+      "file": "test_utils.py"
+    }
+  ],
+  "timeout_seconds": 60,
+  "tags": [
+    "test_location"
+  ]
+}

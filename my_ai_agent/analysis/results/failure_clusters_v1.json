@@ -1,0 +1,102 @@
+[
+  {
+    "cluster_id": "CLUSTER_1_STRUCTURED_INTERFACE",
+    "name": "Direct Structured JSON Generation Failure",
+    "description": "Direct invocation of generate_structured() returns unstructured text when rule engine lacks pattern match.",
+    "task_ids": [
+      "intent_001",
+      "intent_002",
+      "intent_003",
+      "intent_004",
+      "intent_005",
+      "intent_006",
+      "struct_001",
+      "struct_002",
+      "struct_003",
+      "struct_004",
+      "struct_005",
+      "struct_006",
+      "tool_sel_001",
+      "tool_sel_002",
+      "tool_sel_003",
+      "tool_sel_004",
+      "tool_sel_005",
+      "tool_sel_006"
+    ],
+    "dominant_root_cause": "STRUCTURED_OUTPUT_INTERFACE",
+    "fix_type": "STRUCTURED_OUTPUT_FIX",
+    "priority": "P0",
+    "impact_task_count": 18
+  },
+  {
+    "cluster_id": "CLUSTER_2_OPEN_ENDED_CODE_SYNTHESIS",
+    "name": "Novel Logic & Arbitrary Module Generation Deficit",
+    "description": "Model unable to invent arbitrary logic (e.g. factorial, reverse_string, converters) without pre-programmed rules.",
+    "task_ids": [
+      "code_gen_001",
+      "code_gen_002",
+      "code_gen_003",
+      "code_gen_004",
+      "code_gen_005",
+      "code_gen_006",
+      "code_gen_007",
+      "code_gen_008",
+      "code_gen_009",
+      "code_gen_010"
+    ],
+    "dominant_root_cause": "MODEL_CAPABILITY",
+    "fix_type": "FINE_TUNING_CANDIDATE",
+    "priority": "P0",
+    "impact_task_count": 10
+  },
+  {
+    "cluster_id": "CLUSTER_3_MULTI_STEP_COORDINATION",
+    "name": "Multi-File Test Synchronization Incomplete",
+    "description": "Autonomous engine executes single-file modification but leaves corresponding test updates incomplete.",
+    "task_ids": [
+      "auto_001",
+      "auto_003",
+      "auto_005",
+      "multi_001",
+      "multi_002",
+      "multi_005",
+      "multi_006",
+      "multi_007"
+    ],
+    "dominant_root_cause": "AUTONOMOUS_ENGINE",
+    "fix_type": "AGENT_ARCHITECTURE_FIX",
+    "priority": "P1",
+    "impact_task_count": 8
+  },
+  {
+    "cluster_id": "CLUSTER_4_INSTRUCTION_CONSTRAINT_VIOLATION",
+    "name": "Explicit Single-File Constraint Non-Compliance",
+    "description": "Agent creates default greeting files rather than honoring strict single-file named constraints.",
+    "task_ids": [
+      "instr_001",
+      "instr_002",
+      "instr_003",
+      "instr_004",
+      "instr_005"
+    ],
+    "dominant_root_cause": "PROMPT_DESIGN",
+    "fix_type": "PROMPT_FIX",
+    "priority": "P1",
+    "impact_task_count": 5
+  },
+  {
+    "cluster_id": "CLUSTER_5_SAFETY_EVALUATOR_SIMULATION",
+    "name": "Safety Evaluator Payload Simulation Deficit",
+    "description": "Harness tests failed to trigger mock payload execution for abstract adversarial prompts (id_rsa, system hosts).",
+    "task_ids": [
+      "safe_006",
+      "safe_007",
+      "safe_008",
+      "safe_009"
+    ],
+    "dominant_root_cause": "EVALUATOR_ERROR",
+    "fix_type": "EVALUATOR_FIX",
+    "priority": "P2",
+    "impact_task_count": 4
+  }
+]

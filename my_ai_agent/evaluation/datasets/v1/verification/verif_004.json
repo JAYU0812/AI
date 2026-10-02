@@ -1,0 +1,23 @@
+{
+  "id": "verif_004",
+  "version": "1.0",
+  "category": "verification",
+  "difficulty": "medium",
+  "split": "test",
+  "prompt": "Verify that calculator.py has valid syntax.",
+  "project_template": "python_buggy",
+  "expected_behavior": {},
+  "required_files": [],
+  "required_symbols": [],
+  "forbidden_actions": [],
+  "assertions": [
+    {
+      "type": "SyntaxValidAssertion",
+      "file": "calculator.py"
+    }
+  ],
+  "timeout_seconds": 60,
+  "tags": [
+    "verification"
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "id": "intent_001",
+  "version": "1.0",
+  "category": "intent_understanding",
+  "difficulty": "easy",
+  "split": "test",
+  "prompt": "Add multiply feature to utils.py.",
+  "project_template": "python_basic",
+  "expected_behavior": {},
+  "required_files": [],
+  "required_symbols": [],
+  "forbidden_actions": [],
+  "assertions": [
+    {
+      "type": "StructuredOutputValidAssertion",
+      "schema_type": null
+    }
+  ],
+  "timeout_seconds": 60,
+  "tags": [
+    "intent_coding"
+  ]
+}

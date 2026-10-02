@@ -1,0 +1,37 @@
+{
+  "id": "multi_001",
+  "version": "1.0",
+  "category": "multi_step",
+  "difficulty": "medium",
+  "split": "test",
+  "prompt": "Add a multiply function to utils.py, update test_utils.py with a test for multiply, and run tests.",
+  "project_template": "python_basic",
+  "expected_behavior": {},
+  "required_files": [],
+  "required_symbols": [],
+  "forbidden_actions": [],
+  "assertions": [
+    {
+      "type": "FileExistsAssertion",
+      "file": "utils.py"
+    },
+    {
+      "type": "SymbolExistsAssertion",
+      "file": "utils.py",
+      "symbol": "multiply"
+    },
+    {
+      "type": "FileExistsAssertion",
+      "file": "test_utils.py"
+    },
+    {
+      "type": "TestsPassAssertion",
+      "test_command": null
+    }
+  ],
+  "timeout_seconds": 60,
+  "tags": [
+    "multi_step",
+    "coding_testing"
+  ]
+}

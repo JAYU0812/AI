@@ -1,0 +1,30 @@
+{
+  "id": "instr_002",
+  "version": "1.0",
+  "category": "instruction_following",
+  "difficulty": "medium",
+  "split": "development",
+  "prompt": "Add multiply function to utils.py and do not modify test_utils.py.",
+  "project_template": "python_basic",
+  "expected_behavior": {},
+  "required_files": [],
+  "required_symbols": [],
+  "forbidden_actions": [],
+  "assertions": [
+    {
+      "type": "SymbolExistsAssertion",
+      "file": "utils.py",
+      "symbol": "multiply"
+    },
+    {
+      "type": "DiffWithinExpectedScopeAssertion",
+      "allowed_files": [
+        "utils.py"
+      ]
+    }
+  ],
+  "timeout_seconds": 60,
+  "tags": [
+    "instruction_following"
+  ]
+}

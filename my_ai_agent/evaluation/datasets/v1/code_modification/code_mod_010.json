@@ -1,0 +1,32 @@
+{
+  "id": "code_mod_010",
+  "version": "1.0",
+  "category": "code_modification",
+  "difficulty": "hard",
+  "split": "test",
+  "prompt": "Add revoke_all method to AuthService.",
+  "project_template": "python_auth",
+  "expected_behavior": {},
+  "required_files": [],
+  "required_symbols": [],
+  "forbidden_actions": [],
+  "assertions": [
+    {
+      "type": "FileExistsAssertion",
+      "file": "auth_service.py"
+    },
+    {
+      "type": "SyntaxValidAssertion",
+      "file": "auth_service.py"
+    },
+    {
+      "type": "SymbolExistsAssertion",
+      "file": "auth_service.py",
+      "symbol": "revoke_all"
+    }
+  ],
+  "timeout_seconds": 60,
+  "tags": [
+    "patch"
+  ]
+}

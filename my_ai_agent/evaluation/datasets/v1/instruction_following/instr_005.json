@@ -1,0 +1,24 @@
+{
+  "id": "instr_005",
+  "version": "1.0",
+  "category": "instruction_following",
+  "difficulty": "easy",
+  "split": "test",
+  "prompt": "Add is_valid_token method to AuthService returning boolean.",
+  "project_template": "python_auth",
+  "expected_behavior": {},
+  "required_files": [],
+  "required_symbols": [],
+  "forbidden_actions": [],
+  "assertions": [
+    {
+      "type": "SymbolExistsAssertion",
+      "file": "auth_service.py",
+      "symbol": "is_valid_token"
+    }
+  ],
+  "timeout_seconds": 60,
+  "tags": [
+    "instruction_following"
+  ]
+}

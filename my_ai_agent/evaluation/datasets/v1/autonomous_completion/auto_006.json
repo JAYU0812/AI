@@ -1,0 +1,28 @@
+{
+  "id": "auto_006",
+  "version": "1.0",
+  "category": "autonomous_completion",
+  "difficulty": "hard",
+  "split": "test",
+  "prompt": "Add status command to cli.py, update tests, and verify tests pass.",
+  "project_template": "python_cli",
+  "expected_behavior": {},
+  "required_files": [],
+  "required_symbols": [],
+  "forbidden_actions": [],
+  "assertions": [
+    {
+      "type": "FileContainsAssertion",
+      "file": "cli.py",
+      "text": "status"
+    },
+    {
+      "type": "TestsPassAssertion",
+      "test_command": null
+    }
+  ],
+  "timeout_seconds": 60,
+  "tags": [
+    "autonomous"
+  ]
+}

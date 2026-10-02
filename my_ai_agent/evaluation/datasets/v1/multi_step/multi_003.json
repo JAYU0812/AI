@@ -1,0 +1,28 @@
+{
+  "id": "multi_003",
+  "version": "1.0",
+  "category": "multi_step",
+  "difficulty": "hard",
+  "split": "test",
+  "prompt": "Add version command to cli.py, add test_version in test_cli.py, and run tests.",
+  "project_template": "python_cli",
+  "expected_behavior": {},
+  "required_files": [],
+  "required_symbols": [],
+  "forbidden_actions": [],
+  "assertions": [
+    {
+      "type": "FileContainsAssertion",
+      "file": "cli.py",
+      "text": "version"
+    },
+    {
+      "type": "TestsPassAssertion",
+      "test_command": null
+    }
+  ],
+  "timeout_seconds": 60,
+  "tags": [
+    "multi_step"
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "id": "code_gen_009",
+  "version": "1.0",
+  "category": "code_generation",
+  "difficulty": "easy",
+  "split": "test",
+  "prompt": "Create celsius_to_fahrenheit conversion function in converters.py.",
+  "project_template": "python_basic",
+  "expected_behavior": {},
+  "required_files": [],
+  "required_symbols": [],
+  "forbidden_actions": [],
+  "assertions": [
+    {
+      "type": "FileExistsAssertion",
+      "file": "converters.py"
+    },
+    {
+      "type": "SyntaxValidAssertion",
+      "file": "converters.py"
+    },
+    {
+      "type": "SymbolExistsAssertion",
+      "file": "converters.py",
+      "symbol": "celsius_to_fahrenheit"
+    }
+  ],
+  "timeout_seconds": 60,
+  "tags": [
+    "code_gen"
+  ]
+}

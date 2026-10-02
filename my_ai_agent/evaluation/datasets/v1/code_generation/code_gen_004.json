@@ -1,0 +1,32 @@
+{
+  "id": "code_gen_004",
+  "version": "1.0",
+  "category": "code_generation",
+  "difficulty": "easy",
+  "split": "test",
+  "prompt": "Create a Python function power in utils.py for base raised to exponent.",
+  "project_template": "python_basic",
+  "expected_behavior": {},
+  "required_files": [],
+  "required_symbols": [],
+  "forbidden_actions": [],
+  "assertions": [
+    {
+      "type": "FileExistsAssertion",
+      "file": "utils.py"
+    },
+    {
+      "type": "SyntaxValidAssertion",
+      "file": "utils.py"
+    },
+    {
+      "type": "SymbolExistsAssertion",
+      "file": "utils.py",
+      "symbol": "power"
+    }
+  ],
+  "timeout_seconds": 60,
+  "tags": [
+    "code_gen"
+  ]
+}

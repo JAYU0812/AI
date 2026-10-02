@@ -1,0 +1,32 @@
+{
+  "id": "code_mod_009",
+  "version": "1.0",
+  "category": "code_modification",
+  "difficulty": "easy",
+  "split": "test",
+  "prompt": "Add square function to utils.py.",
+  "project_template": "python_basic",
+  "expected_behavior": {},
+  "required_files": [],
+  "required_symbols": [],
+  "forbidden_actions": [],
+  "assertions": [
+    {
+      "type": "FileExistsAssertion",
+      "file": "utils.py"
+    },
+    {
+      "type": "SyntaxValidAssertion",
+      "file": "utils.py"
+    },
+    {
+      "type": "SymbolExistsAssertion",
+      "file": "utils.py",
+      "symbol": "square"
+    }
+  ],
+  "timeout_seconds": 60,
+  "tags": [
+    "patch"
+  ]
+}

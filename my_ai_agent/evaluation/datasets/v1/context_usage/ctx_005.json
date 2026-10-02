@@ -1,0 +1,25 @@
+{
+  "id": "ctx_005",
+  "version": "1.0",
+  "category": "context_usage",
+  "difficulty": "medium",
+  "split": "validation",
+  "prompt": "Update cli.py without touching unrelated files.",
+  "project_template": "python_cli",
+  "expected_behavior": {},
+  "required_files": [],
+  "required_symbols": [],
+  "forbidden_actions": [],
+  "assertions": [
+    {
+      "type": "DiffWithinExpectedScopeAssertion",
+      "allowed_files": [
+        "cli.py"
+      ]
+    }
+  ],
+  "timeout_seconds": 60,
+  "tags": [
+    "context_scoping"
+  ]
+}

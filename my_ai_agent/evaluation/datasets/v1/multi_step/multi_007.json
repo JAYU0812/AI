@@ -1,0 +1,28 @@
+{
+  "id": "multi_007",
+  "version": "1.0",
+  "category": "multi_step",
+  "difficulty": "medium",
+  "split": "test",
+  "prompt": "Add modulo to calculator.py, add test_modulo, and run tests.",
+  "project_template": "python_buggy",
+  "expected_behavior": {},
+  "required_files": [],
+  "required_symbols": [],
+  "forbidden_actions": [],
+  "assertions": [
+    {
+      "type": "SymbolExistsAssertion",
+      "file": "calculator.py",
+      "symbol": "modulo"
+    },
+    {
+      "type": "TestsPassAssertion",
+      "test_command": null
+    }
+  ],
+  "timeout_seconds": 60,
+  "tags": [
+    "multi_step"
+  ]
+}

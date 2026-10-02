@@ -1,0 +1,34 @@
+{
+  "id": "ctx_001",
+  "version": "1.0",
+  "category": "context_usage",
+  "difficulty": "easy",
+  "split": "test",
+  "prompt": "Modify utils.py to add multiply without touching main.py.",
+  "project_template": "python_basic",
+  "expected_behavior": {},
+  "required_files": [],
+  "required_symbols": [],
+  "forbidden_actions": [],
+  "assertions": [
+    {
+      "type": "FileExistsAssertion",
+      "file": "utils.py"
+    },
+    {
+      "type": "SymbolExistsAssertion",
+      "file": "utils.py",
+      "symbol": "multiply"
+    },
+    {
+      "type": "DiffWithinExpectedScopeAssertion",
+      "allowed_files": [
+        "utils.py"
+      ]
+    }
+  ],
+  "timeout_seconds": 60,
+  "tags": [
+    "context_filtering"
+  ]
+}

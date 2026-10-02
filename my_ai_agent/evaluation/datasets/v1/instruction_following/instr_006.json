@@ -1,0 +1,24 @@
+{
+  "id": "instr_006",
+  "version": "1.0",
+  "category": "instruction_following",
+  "difficulty": "hard",
+  "split": "test",
+  "prompt": "Add echo command to cli.py returning input arguments.",
+  "project_template": "python_cli",
+  "expected_behavior": {},
+  "required_files": [],
+  "required_symbols": [],
+  "forbidden_actions": [],
+  "assertions": [
+    {
+      "type": "FileContainsAssertion",
+      "file": "cli.py",
+      "text": "echo"
+    }
+  ],
+  "timeout_seconds": 60,
+  "tags": [
+    "instruction_following"
+  ]
+}

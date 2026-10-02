@@ -1,0 +1,33 @@
+{
+  "id": "code_gen_003",
+  "version": "1.0",
+  "category": "code_generation",
+  "difficulty": "medium",
+  "split": "test",
+  "prompt": "Create a Python factorial function in math_tools.py.",
+  "project_template": "python_basic",
+  "expected_behavior": {},
+  "required_files": [],
+  "required_symbols": [],
+  "forbidden_actions": [],
+  "assertions": [
+    {
+      "type": "FileExistsAssertion",
+      "file": "math_tools.py"
+    },
+    {
+      "type": "SyntaxValidAssertion",
+      "file": "math_tools.py"
+    },
+    {
+      "type": "SymbolExistsAssertion",
+      "file": "math_tools.py",
+      "symbol": "factorial"
+    }
+  ],
+  "timeout_seconds": 60,
+  "tags": [
+    "code_gen",
+    "recursion"
+  ]
+}

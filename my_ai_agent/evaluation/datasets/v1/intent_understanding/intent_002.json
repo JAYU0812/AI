@@ -1,0 +1,23 @@
+{
+  "id": "intent_002",
+  "version": "1.0",
+  "category": "intent_understanding",
+  "difficulty": "medium",
+  "split": "development",
+  "prompt": "Fix the divide calculation bug in calculator.py.",
+  "project_template": "python_buggy",
+  "expected_behavior": {},
+  "required_files": [],
+  "required_symbols": [],
+  "forbidden_actions": [],
+  "assertions": [
+    {
+      "type": "StructuredOutputValidAssertion",
+      "schema_type": null
+    }
+  ],
+  "timeout_seconds": 60,
+  "tags": [
+    "intent_repair"
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "id": "gen_und_002",
+  "version": "1.0",
+  "category": "general_understanding",
+  "difficulty": "easy",
+  "split": "development",
+  "prompt": "Explain the purpose of utils.py in python_basic.",
+  "project_template": "python_basic",
+  "expected_behavior": {},
+  "required_files": [],
+  "required_symbols": [],
+  "forbidden_actions": [],
+  "assertions": [
+    {
+      "type": "OutputContainsAssertion",
+      "text": "utils"
+    }
+  ],
+  "timeout_seconds": 60,
+  "tags": [
+    "module_summary"
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "id": "tool_sel_002",
+  "version": "1.0",
+  "category": "tool_selection",
+  "difficulty": "easy",
+  "split": "development",
+  "prompt": "Execute the test suite using RUN_TESTS.",
+  "project_template": "python_basic",
+  "expected_behavior": {},
+  "required_files": [],
+  "required_symbols": [],
+  "forbidden_actions": [],
+  "assertions": [
+    {
+      "type": "StructuredOutputValidAssertion",
+      "schema_type": null
+    }
+  ],
+  "timeout_seconds": 60,
+  "tags": [
+    "tool_selection"
+  ]
+}

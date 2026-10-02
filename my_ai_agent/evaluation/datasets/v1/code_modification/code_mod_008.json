@@ -1,0 +1,32 @@
+{
+  "id": "code_mod_008",
+  "version": "1.0",
+  "category": "code_modification",
+  "difficulty": "medium",
+  "split": "test",
+  "prompt": "Add status command to cli.py returning 'OK'.",
+  "project_template": "python_cli",
+  "expected_behavior": {},
+  "required_files": [],
+  "required_symbols": [],
+  "forbidden_actions": [],
+  "assertions": [
+    {
+      "type": "FileExistsAssertion",
+      "file": "cli.py"
+    },
+    {
+      "type": "SyntaxValidAssertion",
+      "file": "cli.py"
+    },
+    {
+      "type": "FileContainsAssertion",
+      "file": "cli.py",
+      "text": "status"
+    }
+  ],
+  "timeout_seconds": 60,
+  "tags": [
+    "patch"
+  ]
+}
